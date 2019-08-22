@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ntv650_ecu)(type Legacy)(uri C:/TEMP/speeduino/ntv650/lib/ntv650_ecu.lib)(options "")(descr ""))
+)
