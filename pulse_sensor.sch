@@ -38,31 +38,6 @@ Text GLabel 2900 2350 0    50   Input ~ 0
 VR1+
 Text GLabel 2900 2650 0    50   Input ~ 0
 VR1-
-Wire Wire Line
-	7350 1650 7350 1800
-Wire Wire Line
-	7350 1800 8250 1800
-Wire Wire Line
-	8250 1800 8250 1500
-Wire Wire Line
-	8250 1500 8100 1500
-$Comp
-L Device:R R?
-U 1 1 5D615BE3
-P 8450 1650
-F 0 "R?" V 8243 1650 50  0000 C CNN
-F 1 "1k" V 8334 1650 50  0000 C CNN
-F 2 "" V 8380 1650 50  0001 C CNN
-F 3 "~" H 8450 1650 50  0001 C CNN
-	1    8450 1650
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	8600 1650 9000 1650
-Wire Wire Line
-	8300 1650 7850 1650
-Wire Wire Line
-	7850 1650 7850 1600
 $Comp
 L power:Earth #PWR?
 U 1 1 5D61D47C
@@ -80,11 +55,6 @@ Wire Wire Line
 	7350 750  6950 750 
 Wire Wire Line
 	6950 750  6950 950 
-Wire Wire Line
-	9000 1200 9000 1650
-Connection ~ 9000 1650
-Wire Wire Line
-	9000 1650 9550 1650
 Wire Wire Line
 	4400 2350 4400 2700
 Wire Wire Line
