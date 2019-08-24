@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 14
+Sheet 3 16
 Title ""
 Date ""
 Rev ""
@@ -13,20 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L power:Earth #PWR?
-U 1 1 5D5F750B
-P 3400 3100
-AR Path="/5D5F750B" Ref="#PWR?"  Part="1" 
-AR Path="/5D5F1B22/5D5F750B" Ref="#PWR?"  Part="1" 
-AR Path="/5D5F08C5/5D5F1B22/5D5F750B" Ref="#PWR03"  Part="1" 
-F 0 "#PWR03" H 3400 2850 50  0001 C CNN
-F 1 "Earth" H 3400 2950 50  0001 C CNN
-F 2 "" H 3400 3100 50  0001 C CNN
-F 3 "~" H 3400 3100 50  0001 C CNN
-	1    3400 3100
-	1    0    0    -1  
-$EndComp
 Text GLabel 6800 3100 2    50   Input ~ 0
 5V
 Wire Wire Line
@@ -83,20 +69,6 @@ F 1 "1nF" H 5415 2555 50  0000 L CNN
 F 2 "" H 5338 2450 50  0001 C CNN
 F 3 "~" H 5300 2600 50  0001 C CNN
 	1    5300 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR?
-U 1 1 5D5F7544
-P 6350 3400
-AR Path="/5D5F7544" Ref="#PWR?"  Part="1" 
-AR Path="/5D5F1B22/5D5F7544" Ref="#PWR?"  Part="1" 
-AR Path="/5D5F08C5/5D5F1B22/5D5F7544" Ref="#PWR05"  Part="1" 
-F 0 "#PWR05" H 6350 3150 50  0001 C CNN
-F 1 "Earth" H 6350 3250 50  0001 C CNN
-F 2 "" H 6350 3400 50  0001 C CNN
-F 3 "~" H 6350 3400 50  0001 C CNN
-	1    6350 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -156,34 +128,18 @@ F 3 "~" H 5450 3900 50  0001 C CNN
 	1    5450 3900
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:Earth #PWR?
-U 1 1 5D5F7594
-P 3400 3600
-AR Path="/5D5F7594" Ref="#PWR?"  Part="1" 
-AR Path="/5D5F1B22/5D5F7594" Ref="#PWR?"  Part="1" 
-AR Path="/5D5F08C5/5D5F1B22/5D5F7594" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 3400 3350 50  0001 C CNN
-F 1 "Earth" H 3400 3450 50  0001 C CNN
-F 2 "" H 3400 3600 50  0001 C CNN
-F 3 "~" H 3400 3600 50  0001 C CNN
-	1    3400 3600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3400 3600 3350 3600
 Wire Wire Line
 	3350 3600 3350 3400
 Wire Wire Line
 	3350 3400 3400 3400
-Connection ~ 3400 3600
 Wire Wire Line
 	3400 3100 3350 3100
 Wire Wire Line
 	3350 3100 3350 2900
 Wire Wire Line
 	3350 2900 3400 2900
-Connection ~ 3400 3100
 $Comp
 L Device:R R?
 U 1 1 5D5F75A2
@@ -234,20 +190,6 @@ Wire Wire Line
 	7300 4300 6350 4300
 Wire Wire Line
 	6350 4300 6350 4050
-$Comp
-L ntv650_ecu:MAX9926_9927 P?
-U 1 1 5D5F760F
-P 4150 3250
-AR Path="/5D5F760F" Ref="P?"  Part="1" 
-AR Path="/5D5F1B22/5D5F760F" Ref="P?"  Part="1" 
-AR Path="/5D5F08C5/5D5F1B22/5D5F760F" Ref="P1"  Part="1" 
-F 0 "P1" H 4150 3843 60  0000 C CNN
-F 1 "MAX9926_9927" H 4150 3745 50  0000 C CNN
-F 2 "" H 4150 3250 60  0000 C CNN
-F 3 "" H 4150 3250 60  0000 C CNN
-	1    4150 3250
-	1    0    0    -1  
-$EndComp
 Text HLabel 1600 3600 0    50   Input ~ 0
 Output1
 Text HLabel 1600 3800 0    50   Input ~ 0
@@ -304,4 +246,56 @@ Wire Wire Line
 Wire Wire Line
 	5800 2750 5300 2750
 Connection ~ 5800 2750
+NoConn ~ 4900 3300
+NoConn ~ 3400 3000
+NoConn ~ 3400 3500
+$Comp
+L power:GND #PWR0117
+U 1 1 5D6FE358
+P 6350 3400
+F 0 "#PWR0117" H 6350 3150 50  0001 C CNN
+F 1 "GND" H 6355 3227 50  0000 C CNN
+F 2 "" H 6350 3400 50  0001 C CNN
+F 3 "" H 6350 3400 50  0001 C CNN
+	1    6350 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L ntv650_ecu:MAX9926_9927 P?
+U 1 1 5D5F760F
+P 4150 3250
+AR Path="/5D5F760F" Ref="P?"  Part="1" 
+AR Path="/5D5F1B22/5D5F760F" Ref="P?"  Part="1" 
+AR Path="/5D5F08C5/5D5F1B22/5D5F760F" Ref="P1"  Part="1" 
+F 0 "P1" H 4150 3843 60  0000 C CNN
+F 1 "MAX9926_9927" H 4150 3745 50  0000 C CNN
+F 2 "" H 4150 3250 60  0000 C CNN
+F 3 "" H 4150 3250 60  0000 C CNN
+	1    4150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 5D703065
+P 3350 3100
+F 0 "#PWR0119" H 3350 2850 50  0001 C CNN
+F 1 "GND" H 3355 2927 50  0000 C CNN
+F 2 "" H 3350 3100 50  0001 C CNN
+F 3 "" H 3350 3100 50  0001 C CNN
+	1    3350 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 3350 3100
+$Comp
+L power:GND #PWR0120
+U 1 1 5D70372F
+P 3350 3600
+F 0 "#PWR0120" H 3350 3350 50  0001 C CNN
+F 1 "GND" H 3355 3427 50  0000 C CNN
+F 2 "" H 3350 3600 50  0001 C CNN
+F 3 "" H 3350 3600 50  0001 C CNN
+	1    3350 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 3350 3600
 $EndSCHEMATC

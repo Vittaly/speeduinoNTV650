@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 14
+Sheet 2 16
 Title ""
 Date ""
 Rev ""
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text GLabel 6100 1200 2    50   Input ~ 0
-ADCClamp5
+ADC-Clamp5
 $Comp
 L Device:C C1
 U 1 1 5D5E4511
@@ -38,17 +38,6 @@ Text GLabel 2900 2350 0    50   Input ~ 0
 VR1+
 Text GLabel 2900 2650 0    50   Input ~ 0
 VR1-
-$Comp
-L power:Earth #PWR02
-U 1 1 5D61D47C
-P 7350 950
-F 0 "#PWR02" H 7350 700 50  0001 C CNN
-F 1 "Earth" H 7350 800 50  0001 C CNN
-F 2 "" H 7350 950 50  0001 C CNN
-F 3 "~" H 7350 950 50  0001 C CNN
-	1    7350 950 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7350 950  7350 750 
 Wire Wire Line
@@ -100,4 +89,15 @@ Wire Wire Line
 	9150 2550 9750 2550
 Wire Wire Line
 	2900 2350 4400 2350
+$Comp
+L power:GND #PWR0118
+U 1 1 5D6FEADF
+P 7350 950
+F 0 "#PWR0118" H 7350 700 50  0001 C CNN
+F 1 "GND" H 7355 777 50  0000 C CNN
+F 2 "" H 7350 950 50  0001 C CNN
+F 3 "" H 7350 950 50  0001 C CNN
+	1    7350 950 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

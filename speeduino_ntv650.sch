@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 14
+Sheet 1 16
 Title ""
 Date ""
 Rev ""
@@ -112,7 +112,7 @@ U 5D63B349
 F0 "Inlet Air Temperature sensor" 50
 F1 "InletAirTemperatureSensor.sch" 50
 $EndSheet
-Text GLabel 4850 5600 0    50   Input ~ 0
+Text GLabel 4550 5600 0    50   Input ~ 0
 ITS-CPU-A0
 $Sheet
 S 900  6450 1250 750 
@@ -192,4 +192,140 @@ U 5D68FA4A
 F0 "IgnitorOutput" 50
 F1 "IgnitorOutput.sch" 50
 $EndSheet
+NoConn ~ 5350 1050
+NoConn ~ 5450 1050
+NoConn ~ 5650 1050
+NoConn ~ 5750 1050
+Text GLabel 4850 4850 0    50   Output ~ 0
+IGN1-CPU-D40
+Text GLabel 4850 4750 0    50   Output ~ 0
+IGN2-CPU-D38
+$Comp
+L power:GND #PWR0108
+U 1 1 5D6BB606
+P 4400 2350
+F 0 "#PWR0108" H 4400 2100 50  0001 C CNN
+F 1 "GND" H 4405 2177 50  0000 C CNN
+F 2 "" H 4400 2350 50  0001 C CNN
+F 3 "" H 4400 2350 50  0001 C CNN
+	1    4400 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2350 4400 1750
+Wire Wire Line
+	4400 1750 5750 1750
+Wire Wire Line
+	5750 1750 5750 2200
+Wire Wire Line
+	5650 2350 5650 2200
+Wire Wire Line
+	5650 2200 5750 2200
+Connection ~ 5750 2200
+Wire Wire Line
+	5750 2200 5750 2350
+Text GLabel 5350 1950 0    50   Output ~ 0
+5V
+Wire Wire Line
+	5350 1950 5550 1950
+Wire Wire Line
+	5550 1950 5550 2250
+Wire Wire Line
+	5450 2350 5450 2250
+Wire Wire Line
+	5450 2250 5550 2250
+Connection ~ 5550 2250
+Wire Wire Line
+	5550 2250 5550 2350
+NoConn ~ 5250 2350
+NoConn ~ 5350 2350
+NoConn ~ 5050 2350
+NoConn ~ 5900 2350
+NoConn ~ 6000 2350
+NoConn ~ 6100 2350
+NoConn ~ 6200 2350
+NoConn ~ 6300 2350
+NoConn ~ 4850 2850
+NoConn ~ 6450 2850
+NoConn ~ 6450 2950
+NoConn ~ 6450 3050
+NoConn ~ 6450 3150
+NoConn ~ 4850 2950
+NoConn ~ 4850 3050
+$Sheet
+S 8350 4750 1650 450 
+U 5D6BFA4A
+F0 "Power supply" 50
+F1 "PowerSupply.sch" 50
+$EndSheet
+Text GLabel 5850 1050 3    50   Input ~ 0
+idle-out
+$Sheet
+S 8500 5750 1850 400 
+U 5D6DB8FB
+F0 "PWM Idle" 50
+F1 "IdleOut.sch" 50
+$EndSheet
+Text GLabel 4850 3150 0    50   Input ~ 0
+IDLE-CPU-D6
+NoConn ~ 5100 6800
+NoConn ~ 5200 6800
+NoConn ~ 5300 6800
+NoConn ~ 5400 6800
+NoConn ~ 5500 6800
+NoConn ~ 5600 6800
+NoConn ~ 4850 6100
+NoConn ~ 4850 6200
+NoConn ~ 4850 6300
+NoConn ~ 4850 5900
+NoConn ~ 4850 5450
+NoConn ~ 4850 5350
+NoConn ~ 4850 5250
+NoConn ~ 4850 5150
+NoConn ~ 4850 5050
+NoConn ~ 4850 4950
+NoConn ~ 6450 6300
+NoConn ~ 6450 6200
+NoConn ~ 6450 6100
+NoConn ~ 6450 6000
+NoConn ~ 6450 5900
+NoConn ~ 6450 5800
+NoConn ~ 4850 4650
+NoConn ~ 4850 4550
+NoConn ~ 4850 4450
+NoConn ~ 4850 4350
+NoConn ~ 4850 4250
+NoConn ~ 4850 4150
+NoConn ~ 4850 3950
+NoConn ~ 4850 3850
+NoConn ~ 4850 3550
+NoConn ~ 4850 3450
+NoConn ~ 4850 3350
+NoConn ~ 6450 5450
+NoConn ~ 6450 5350
+NoConn ~ 6450 5250
+NoConn ~ 6450 5150
+NoConn ~ 6450 5050
+NoConn ~ 6450 4950
+NoConn ~ 6450 4850
+NoConn ~ 6450 4750
+NoConn ~ 6450 4650
+NoConn ~ 6450 4550
+NoConn ~ 6450 4450
+NoConn ~ 6450 4350
+NoConn ~ 6450 4250
+NoConn ~ 6450 4150
+NoConn ~ 6450 4050
+NoConn ~ 6450 3950
+NoConn ~ 6450 3850
+NoConn ~ 6450 3550
+NoConn ~ 6450 3450
+NoConn ~ 6450 3350
+Wire Wire Line
+	4850 5600 4550 5600
+NoConn ~ 5150 2350
+Text GLabel 5250 1050 3    50   Output ~ 0
+ITS_sens
+Text GLabel 5550 1050 3    50   Output ~ 0
+12V-raw
 $EndSCHEMATC

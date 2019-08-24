@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 14
+Sheet 7 16
 Title ""
 Date ""
 Rev ""
@@ -71,8 +71,8 @@ F 3 "" H 6650 3300 50  0001 C CNN
 	1    6650 3300
 	1    0    0    -1  
 $EndComp
-Text GLabel 8200 3250 2    50   Input ~ 0
-IAS-CPU-A0
+Text GLabel 8200 3250 2    50   Output ~ 0
+ITS-CPU-A0
 Wire Wire Line
 	2650 2250 3200 2250
 Wire Wire Line
