@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 11
+Sheet 11 14
 Title ""
 Date ""
 Rev ""
@@ -17,7 +17,9 @@ $Comp
 L Driver_Motor:Pololu_Breakout_A4988 A?
 U 1 1 5D64F049
 P 5100 3400
-F 0 "A?" H 5150 4281 50  0000 C CNN
+AR Path="/5D64F049" Ref="A?"  Part="1" 
+AR Path="/5D64D917/5D64F049" Ref="A1"  Part="1" 
+F 0 "A1" H 5150 4281 50  0000 C CNN
 F 1 "Pololu_Breakout_A4988" H 5150 4190 50  0000 C CNN
 F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 5375 2650 50  0001 L CNN
 F 3 "https://www.pololu.com/product/2980/pictures" H 5200 3100 50  0001 C CNN
@@ -35,10 +37,10 @@ STEP-2A-OUT
 Text GLabel 5600 3600 2    50   Output ~ 0
 STEP-2B-OUT
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0105
 U 1 1 5D64F453
 P 5300 4200
-F 0 "#PWR?" H 5300 3950 50  0001 C CNN
+F 0 "#PWR0105" H 5300 3950 50  0001 C CNN
 F 1 "GND" H 5305 4027 50  0000 C CNN
 F 2 "" H 5300 4200 50  0001 C CNN
 F 3 "" H 5300 4200 50  0001 C CNN
@@ -46,10 +48,10 @@ F 3 "" H 5300 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0106
 U 1 1 5D64FEEF
 P 5100 4200
-F 0 "#PWR?" H 5100 3950 50  0001 C CNN
+F 0 "#PWR0106" H 5100 3950 50  0001 C CNN
 F 1 "GND" H 5105 4027 50  0000 C CNN
 F 2 "" H 5100 4200 50  0001 C CNN
 F 3 "" H 5100 4200 50  0001 C CNN

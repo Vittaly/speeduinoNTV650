@@ -1,3 +1,45 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP IRF3205
+D 110A Id, 55V Vds, Single N-Channel HEXFET Power MOSFET, 8mOhm Ron, TO-220AB
+K Single N-Channel HEXFET Power MOSFET
+F http://www.irf.com/product-info/datasheets/data/irf3205.pdf
+$ENDCMP
+#
+$CMP IRF540N
+D 33A Id, 100V Vds, HEXFET N-Channel MOSFET, TO-220
+K HEXFET N-Channel MOSFET
+F http://www.irf.com/product-info/datasheets/data/irf540n.pdf
+$ENDCMP
+#
+$CMP IRF740
+D 10A Id, 400V Vds, N-Channel Power MOSFET, 500mOhm Rds, TO-220AB
+K N Channel
+F http://www.vishay.com/docs/91054/91054.pdf
+$ENDCMP
+#
+$CMP IRLB8721PBF
+D 62A Id, 30V Vds, N-Channel MOSFET, TO-220
+K N-Channel HEXFET Power MOSFET
+F http://www.infineon.com/dgdl/irlb8721pbf.pdf?fileId=5546d462533600a40153566056732591
+$ENDCMP
+#
+$CMP IRLZ34N
+D 30A Id, 55V Vds, Single N-Channel HEXFET Power MOSFET, 35mOhm Ron, TO-220AB
+K Single N-Channel HEXFET Power MOSFET
+F http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720
+$ENDCMP
+#
+$CMP IRLZ44N
+D 47A Id, 55V Vds, Single N-Channel HEXFET Power MOSFET, 22mOhm Ron, TO-220AB
+K Single N-Channel HEXFET Power MOSFET
+F http://www.irf.com/product-info/datasheets/data/irlz44n.pdf
+$ENDCMP
+#
+$CMP STP62NS04Z
+D 30A Id, 50V Vds, N-Channel Power MOSFET, TO-220
+K N-Channel Power MOSFET
+F http://www.fairchildsemi.com/ds/BU/BUZ11.pdf
+$ENDCMP
+#
 #End Doc Library

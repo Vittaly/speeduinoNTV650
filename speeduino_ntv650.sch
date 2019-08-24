@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
+Sheet 1 14
 Title ""
 Date ""
 Rev ""
@@ -152,10 +152,44 @@ Text GLabel 6150 1050 3    50   Input ~ 0
 STEP-2A-OUT
 Text GLabel 6250 1050 3    50   Input ~ 0
 STEP-2B-OUT
-Text GLabel 4850 3650 0    50   Input ~ 0
+Text GLabel 4850 3650 0    50   Output ~ 0
 STEPDIR-CPU-D16
-Text GLabel 4850 4050 0    50   Input ~ 0
+Text GLabel 4850 4050 0    50   Output ~ 0
 STEPEN-CPU-D24
-Text GLabel 6450 3650 2    50   Input ~ 0
+Text GLabel 6450 3650 2    50   Output ~ 0
 STEP-CPU-D17
+$Sheet
+S 8200 2050 1050 250 
+U 5D65DEE2
+F0 "Injector" 50
+F1 "Injector.sch" 50
+F2 "inj_out" O R 9250 2100 50 
+F3 "CPU_in" I L 8200 2100 50 
+$EndSheet
+$Sheet
+S 8200 2700 1050 250 
+U 5D676664
+F0 "Injector2" 50
+F1 "Injector.sch" 50
+F2 "inj_out" O R 9250 2750 50 
+F3 "CPU_in" I L 8200 2750 50 
+$EndSheet
+Text GLabel 9250 2100 2    50   Input ~ 0
+inj-1-out
+Text GLabel 9250 2750 2    50   Input ~ 0
+inj-2-out
+Text GLabel 8200 2100 0    50   Input ~ 0
+INJ1-CPU-D8
+Text GLabel 8200 2750 0    50   Input ~ 0
+INJ2-CPU-D9
+Text GLabel 4850 3250 0    50   Output ~ 0
+INJ1-CPU-D8
+Text GLabel 6450 3250 2    50   Output ~ 0
+INJ2-CPU-D9
+$Sheet
+S 8100 3550 1500 600 
+U 5D68FA4A
+F0 "IgnitorOutput" 50
+F1 "IgnitorOutput.sch" 50
+$EndSheet
 $EndSCHEMATC
