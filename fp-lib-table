@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name ntv650_ecu)(type KiCad)(uri ${KIPRJMOD}/lib/ntv650_ecu.pretty)(options "")(descr ""))
+)

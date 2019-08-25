@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:speeduino_ntv650-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -24,7 +25,7 @@ AR Path="/5D633C36/5D63C6E2" Ref="C?"  Part="1"
 AR Path="/5D63B349/5D63C6E2" Ref="C11"  Part="1" 
 F 0 "C11" H 4115 3446 50  0000 L CNN
 F 1 "0.1uF" H 4115 3355 50  0000 L CNN
-F 2 "" H 4038 3250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4038 3250 50  0001 C CNN
 F 3 "~" H 4000 3400 50  0001 C CNN
 	1    4000 3400
 	1    0    0    -1  
@@ -38,7 +39,7 @@ AR Path="/5D633C36/5D63C6E8" Ref="C?"  Part="1"
 AR Path="/5D63B349/5D63C6E8" Ref="C12"  Part="1" 
 F 0 "C12" H 4815 3446 50  0000 L CNN
 F 1 "0.22uF" H 4815 3355 50  0000 L CNN
-F 2 "" H 4738 3250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4738 3250 50  0001 C CNN
 F 3 "~" H 4700 3400 50  0001 C CNN
 	1    4700 3400
 	1    0    0    -1  

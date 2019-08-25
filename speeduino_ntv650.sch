@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:speeduino_ntv650-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -31,7 +32,7 @@ U 1 1 5D5F79DA
 P 5850 2650
 F 0 "ARD1" H 5650 -1597 60  0000 C CNN
 F 1 "ArduinoMegaProMini" H 5650 -1703 60  0000 C CNN
-F 2 "" H 6600 2650 60  0000 C CNN
+F 2 "ntv650_ecu:ArduinoMegaProMini" H 6600 2650 60  0001 C CNN
 F 3 "" H 6600 2650 60  0001 C CNN
 	1    5850 2650
 	1    0    0    -1  
