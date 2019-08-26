@@ -63,7 +63,7 @@ U 1 1 5D6030E9
 P 5450 850
 F 0 "J1" V 5667 846 50  0000 C CNN
 F 1 "Conn_01x25_DB-25" V 5576 846 50  0000 C CNN
-F 2 "" H 5450 850 50  0001 C CNN
+F 2 "ntv650_ecu:DSUB-25_Male_Horizontal_P2.77x2.84mm_EdgePinOffset9.90mm_Housed_MountingHolesOffset11.32mm" H 5450 850 50  0001 C CNN
 F 3 "~" H 5450 850 50  0001 C CNN
 	1    5450 850 
 	0    -1   -1   0   
