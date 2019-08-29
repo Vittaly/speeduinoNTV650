@@ -48,7 +48,7 @@ U 1 1 5D6C0E6C
 P 1550 1500
 F 0 "D7" H 1550 1284 50  0000 C CNN
 F 1 "1N5818" H 1550 1375 50  0000 C CNN
-F 2 "Diodes_ThroughHole:D_DO-15_P12.70mm_Horizontal" H 1550 1325 50  0001 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 1550 1325 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 1550 1500 50  0001 C CNN
 	1    1550 1500
 	-1   0    0    1   
@@ -81,7 +81,7 @@ U 1 1 5D6C36C1
 P 4350 1950
 F 0 "D8" V 4304 2029 50  0000 L CNN
 F 1 "1N5919BG" V 4395 2029 50  0000 L CNN
-F 2 "Diodes_ThroughHole:D_DO-15_P12.70mm_Horizontal" H 4350 1775 50  0001 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 4350 1775 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 4350 1950 50  0001 C CNN
 	1    4350 1950
 	0    1    1    0   
