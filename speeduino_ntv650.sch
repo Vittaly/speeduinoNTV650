@@ -79,12 +79,12 @@ MAP_5V
 $Comp
 L power:GND #PWR01
 U 1 1 5D627F7E
-P 6650 1100
-F 0 "#PWR01" H 6650 850 50  0001 C CNN
-F 1 "GND" H 6655 927 50  0000 C CNN
-F 2 "" H 6650 1100 50  0001 C CNN
-F 3 "" H 6650 1100 50  0001 C CNN
-	1    6650 1100
+P 6650 1050
+F 0 "#PWR01" H 6650 800 50  0001 C CNN
+F 1 "GND" H 6655 877 50  0000 C CNN
+F 2 "" H 6650 1050 50  0001 C CNN
+F 3 "" H 6650 1050 50  0001 C CNN
+	1    6650 1050
 	1    0    0    -1  
 $EndComp
 Text GLabel 4550 1050 3    50   Output ~ 0
@@ -193,7 +193,6 @@ U 5D68FA4A
 F0 "IgnitorOutput" 50
 F1 "IgnitorOutput.sch" 50
 $EndSheet
-NoConn ~ 5350 1050
 Text GLabel 4850 4850 0    50   Output ~ 0
 IGN1-CPU-D40
 Text GLabel 4850 4750 0    50   Output ~ 0
@@ -324,9 +323,21 @@ Wire Wire Line
 NoConn ~ 5150 2350
 Text GLabel 5950 1050 3    50   Output ~ 0
 ITS_sens
-Text GLabel 5450 1050 3    50   Output ~ 0
+Text GLabel 5350 1050 3    50   Output ~ 0
 12V-raw
 NoConn ~ 5150 1050
 NoConn ~ 6450 1050
-NoConn ~ 6550 1050
+$Comp
+L power:GND #PWR?
+U 1 1 5D67EA04
+P 5450 1050
+F 0 "#PWR?" H 5450 800 50  0001 C CNN
+F 1 "GND" H 5455 877 50  0000 C CNN
+F 2 "" H 5450 1050 50  0001 C CNN
+F 3 "" H 5450 1050 50  0001 C CNN
+	1    5450 1050
+	1    0    0    -1  
+$EndComp
+Text GLabel 6550 1050 3    50   Output ~ 0
+12V-raw
 $EndSCHEMATC
