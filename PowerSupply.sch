@@ -37,7 +37,7 @@ U 1 1 5D6C04F0
 P 3250 1700
 F 0 "U1" H 3250 1942 50  0000 C CNN
 F 1 "LM2937xT" H 3250 1851 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3250 1925 50  0001 C CIN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 3250 1925 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2937.pdf" H 3250 1650 50  0001 C CNN
 	1    3250 1700
 	1    0    0    -1  
@@ -48,7 +48,7 @@ U 1 1 5D6C0E6C
 P 1550 1500
 F 0 "D7" H 1550 1284 50  0000 C CNN
 F 1 "1N5818" H 1550 1375 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 1550 1325 50  0001 C CNN
+F 2 "Diodes_ThroughHole:D_DO-15_P12.70mm_Horizontal" H 1550 1325 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 1550 1500 50  0001 C CNN
 	1    1550 1500
 	-1   0    0    1   
@@ -59,7 +59,7 @@ U 1 1 5D6C14ED
 P 1900 1900
 F 0 "C18" H 2018 1946 50  0000 L CNN
 F 1 "10uF" H 2018 1855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 1938 1750 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal" H 1938 1750 50  0001 C CNN
 F 3 "~" H 1900 1900 50  0001 C CNN
 	1    1900 1900
 	1    0    0    -1  
@@ -70,7 +70,7 @@ U 1 1 5D6C19A2
 P 2600 1900
 F 0 "C19" H 2715 1946 50  0000 L CNN
 F 1 "0.1uF" H 2715 1855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2638 1750 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal" H 2638 1750 50  0001 C CNN
 F 3 "~" H 2600 1900 50  0001 C CNN
 	1    2600 1900
 	1    0    0    -1  
@@ -81,7 +81,7 @@ U 1 1 5D6C36C1
 P 4350 1950
 F 0 "D8" V 4304 2029 50  0000 L CNN
 F 1 "1N5919BG" V 4395 2029 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4350 1775 50  0001 C CNN
+F 2 "Diodes_ThroughHole:D_DO-15_P12.70mm_Horizontal" H 4350 1775 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 4350 1950 50  0001 C CNN
 	1    4350 1950
 	0    1    1    0   

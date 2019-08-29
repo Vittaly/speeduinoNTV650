@@ -26,7 +26,7 @@ AR Path="/5D63B349/5D6406D2" Ref="C?"  Part="1"
 AR Path="/5D63F6DA/5D6406D2" Ref="C13"  Part="1" 
 F 0 "C13" H 3615 3646 50  0000 L CNN
 F 1 "0.1uF" H 3615 3555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3538 3450 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal" H 3538 3450 50  0001 C CNN
 F 3 "~" H 3500 3600 50  0001 C CNN
 	1    3500 3600
 	1    0    0    -1  
@@ -41,7 +41,7 @@ AR Path="/5D63B349/5D6406D8" Ref="C?"  Part="1"
 AR Path="/5D63F6DA/5D6406D8" Ref="C14"  Part="1" 
 F 0 "C14" H 4315 3646 50  0000 L CNN
 F 1 "0.22uF" H 4315 3555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4238 3450 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal" H 4238 3450 50  0001 C CNN
 F 3 "~" H 4200 3600 50  0001 C CNN
 	1    4200 3600
 	1    0    0    -1  

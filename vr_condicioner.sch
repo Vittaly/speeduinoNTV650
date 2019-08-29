@@ -67,7 +67,7 @@ AR Path="/5D5F1B22/5D5F7530" Ref="C?"  Part="1"
 AR Path="/5D5F08C5/5D5F1B22/5D5F7530" Ref="C2"  Part="1" 
 F 0 "C2" H 5415 2646 50  0000 L CNN
 F 1 "1nF" H 5415 2555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5338 2450 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal" H 5338 2450 50  0001 C CNN
 F 3 "~" H 5300 2600 50  0001 C CNN
 	1    5300 2600
 	1    0    0    -1  
@@ -124,7 +124,7 @@ AR Path="/5D5F1B22/5D5F7580" Ref="C?"  Part="1"
 AR Path="/5D5F08C5/5D5F1B22/5D5F7580" Ref="C3"  Part="1" 
 F 0 "C3" H 5565 3946 50  0000 L CNN
 F 1 "1nF" H 5565 3855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5488 3750 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal" H 5488 3750 50  0001 C CNN
 F 3 "~" H 5450 3900 50  0001 C CNN
 	1    5450 3900
 	1    0    0    -1  

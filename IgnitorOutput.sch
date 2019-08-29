@@ -128,7 +128,7 @@ U 1 1 5D69783F
 P 6850 2850
 F 0 "C17" H 6965 2896 50  0000 L CNN
 F 1 "1uF" H 6965 2805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6888 2700 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal" H 6888 2700 50  0001 C CNN
 F 3 "~" H 6850 2850 50  0001 C CNN
 	1    6850 2850
 	1    0    0    -1  

@@ -63,7 +63,7 @@ AR Path="/5D65DEE2/5D6699BD" Ref="Q1"  Part="1"
 AR Path="/5D676664/5D6699BD" Ref="Q2"  Part="1" 
 F 0 "Q2" H 3206 2596 50  0000 L CNN
 F 1 "STP62NS04Z" H 3206 2505 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3250 2475 50  0001 L CIN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 3250 2475 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/BU/BUZ11.pdf" H 3000 2550 50  0001 L CNN
 	1    3000 2550
 	1    0    0    -1  

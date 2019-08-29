@@ -22,7 +22,7 @@ AR Path="/5D64F049" Ref="A?"  Part="1"
 AR Path="/5D64D917/5D64F049" Ref="A1"  Part="1" 
 F 0 "A1" H 5150 4281 50  0000 C CNN
 F 1 "Pololu_Breakout_A4988" H 5150 4190 50  0000 C CNN
-F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 5375 2650 50  0001 L CNN
+F 2 "ntv650_ecu:A4988 Stepper Motor Driver Carrier" H 5375 2650 50  0001 L CNN
 F 3 "https://www.pololu.com/product/2980/pictures" H 5200 3100 50  0001 C CNN
 	1    5100 3400
 	1    0    0    -1  
