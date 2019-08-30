@@ -1,4 +1,4 @@
-update=29.08.2019 20:40:22
+update=30.08.2019 7:34:47
 version=1
 last_client=kicad
 [general]
@@ -237,7 +237,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.3
+Clearance=0.4
 TrackWidth=0.4
 ViaDiameter=0.8
 ViaDrill=0.4
@@ -248,7 +248,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=GND_MOSFIT
-Clearance=0.3
+Clearance=0.4
 TrackWidth=0.6
 ViaDiameter=1
 ViaDrill=0.8
