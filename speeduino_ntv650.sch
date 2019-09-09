@@ -41,53 +41,42 @@ Text GLabel 6450 3750 2    50   Input ~ 0
 TACH1-CPU-D19
 Text GLabel 4850 3750 0    50   Input ~ 0
 TACH2-CPU-D18
-Text GLabel 4950 1050 3    50   Input ~ 0
+Text GLabel 7800 1250 3    50   Input ~ 0
 inj-1-out
-Text GLabel 6250 1050 3    50   Input ~ 0
+Text GLabel 7700 1250 3    50   Input ~ 0
 inj-2-out
-Text GLabel 5050 1050 3    50   Input ~ 0
+Text GLabel 7600 1250 3    50   Input ~ 0
 ign-1-out
-Text GLabel 6350 1050 3    50   Input ~ 0
+Text GLabel 7500 1250 3    50   Input ~ 0
 ign-2-out
-Text GLabel 4350 1050 3    50   Output ~ 0
+Text GLabel 9200 1250 3    50   Output ~ 0
 VR2+
-Text GLabel 5650 1050 3    50   Output ~ 0
+Text GLabel 9100 1250 3    50   Output ~ 0
 VR2-
-Text GLabel 4250 1050 3    50   Output ~ 0
+Text GLabel 9400 1250 3    50   Output ~ 0
 VR1+
-Text GLabel 5550 1050 3    50   Output ~ 0
+Text GLabel 9300 1250 3    50   Output ~ 0
 VR1-
-$Comp
-L Connector_Generic:Conn_01x25 J1
-U 1 1 5D6030E9
-P 5450 850
-F 0 "J1" V 5667 846 50  0000 C CNN
-F 1 "Conn_01x25_DB-25" V 5576 846 50  0000 C CNN
-F 2 "ntv650_ecu:DSUB-25_Male_Horizontal_P2.77x2.84mm_EdgePinOffset9.90mm_Housed_MountingHolesOffset11.32mm" H 5450 850 50  0001 C CNN
-F 3 "~" H 5450 850 50  0001 C CNN
-	1    5450 850 
-	0    -1   -1   0   
-$EndComp
-Text GLabel 4450 1050 3    50   Output ~ 0
+Text GLabel 9000 1250 3    50   Output ~ 0
 MAP
 Text GLabel 6750 5700 2    50   Input ~ 0
 MAP-CPU-A3
 Wire Wire Line
 	6450 5700 6750 5700
-Text GLabel 5750 1050 3    50   Input ~ 0
+Text GLabel 8800 1250 3    50   Input ~ 0
 MAP_5V
 $Comp
 L power:GND #PWR01
 U 1 1 5D627F7E
-P 6650 1050
-F 0 "#PWR01" H 6650 800 50  0001 C CNN
-F 1 "GND" H 6655 877 50  0000 C CNN
-F 2 "" H 6650 1050 50  0001 C CNN
-F 3 "" H 6650 1050 50  0001 C CNN
-	1    6650 1050
+P 7100 1250
+F 0 "#PWR01" H 7100 1000 50  0001 C CNN
+F 1 "GND" H 7105 1077 50  0000 C CNN
+F 2 "" H 7100 1250 50  0001 C CNN
+F 3 "" H 7100 1250 50  0001 C CNN
+	1    7100 1250
 	1    0    0    -1  
 $EndComp
-Text GLabel 4550 1050 3    50   Output ~ 0
+Text GLabel 8600 1250 3    50   Output ~ 0
 O2_sens
 $Sheet
 S 850  3200 750  550 
@@ -103,7 +92,7 @@ U 5D633C36
 F0 "Throttle Position Sensor" 50
 F1 "ThrottlePositionSensor.sch" 50
 $EndSheet
-Text GLabel 5850 1050 3    50   Output ~ 0
+Text GLabel 8500 1250 3    50   Output ~ 0
 TPS_sens
 Text GLabel 4850 5700 0    50   Input ~ 0
 TPS-CPU-A2
@@ -137,7 +126,7 @@ F1 "CoolantTemperatureSensor.sch" 50
 $EndSheet
 Text GLabel 6450 5600 2    50   Input ~ 0
 CLT-CPU-A1
-Text GLabel 4650 1050 3    50   Output ~ 0
+Text GLabel 8400 1250 3    50   Output ~ 0
 CLT_sens
 $Sheet
 S 1950 1900 1050 750 
@@ -145,13 +134,13 @@ U 5D64D917
 F0 "Stepper Driver" 50
 F1 "StepperDriver.sch" 50
 $EndSheet
-Text GLabel 4750 1050 3    50   Input ~ 0
+Text GLabel 8200 1250 3    50   Input ~ 0
 STEP-1A-OUT
-Text GLabel 6050 1050 3    50   Input ~ 0
+Text GLabel 8100 1250 3    50   Input ~ 0
 STEP-1B-OUT
-Text GLabel 4850 1050 3    50   Input ~ 0
+Text GLabel 8000 1250 3    50   Input ~ 0
 STEP-2A-OUT
-Text GLabel 6150 1050 3    50   Input ~ 0
+Text GLabel 7900 1250 3    50   Input ~ 0
 STEP-2B-OUT
 Text GLabel 4850 3650 0    50   Output ~ 0
 STEPDIR-CPU-D16
@@ -255,7 +244,7 @@ U 5D6BFA4A
 F0 "Power supply" 50
 F1 "PowerSupply.sch" 50
 $EndSheet
-Text GLabel 5250 1050 3    50   Input ~ 0
+Text GLabel 7400 1250 3    50   Input ~ 0
 idle-out
 $Sheet
 S 8500 5750 1850 400 
@@ -321,25 +310,153 @@ NoConn ~ 6450 3350
 Wire Wire Line
 	4850 5600 4550 5600
 NoConn ~ 5150 2350
-Text GLabel 5950 1050 3    50   Output ~ 0
+Text GLabel 8300 1250 3    50   Output ~ 0
 ITS_sens
-Text GLabel 5350 1050 3    50   Output ~ 0
+Text GLabel 7200 1250 3    50   Output ~ 0
 12V-raw
-NoConn ~ 5150 1050
-NoConn ~ 6450 1050
 $Comp
 L power:GND #PWR0121
 U 1 1 5D67EA04
-P 5450 1500
-F 0 "#PWR0121" H 5450 1250 50  0001 C CNN
-F 1 "GND" H 5455 1327 50  0000 C CNN
-F 2 "" H 5450 1500 50  0001 C CNN
-F 3 "" H 5450 1500 50  0001 C CNN
-	1    5450 1500
+P 7000 1250
+F 0 "#PWR0121" H 7000 1000 50  0001 C CNN
+F 1 "GND" H 7005 1077 50  0000 C CNN
+F 2 "" H 7000 1250 50  0001 C CNN
+F 3 "" H 7000 1250 50  0001 C CNN
+	1    7000 1250
 	1    0    0    -1  
 $EndComp
-Text GLabel 6550 1050 3    50   Output ~ 0
+Text GLabel 7300 1250 3    50   Output ~ 0
 12V-raw
-Wire Wire Line
-	5450 1500 5450 1050
+$Comp
+L Connector:DB25_Male_MountingHoles J1
+U 1 1 5D726F2D
+P 8200 950
+F 0 "J1" V 8517 906 50  0000 C CNN
+F 1 "DB25_Male_MountingHoles" V 8426 906 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-25_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 8200 950 50  0001 C CNN
+F 3 " ~" H 8200 950 50  0001 C CNN
+	1    8200 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 5D72D065
+P 9600 950
+F 0 "#PWR0123" H 9600 700 50  0001 C CNN
+F 1 "GND" H 9605 777 50  0000 C CNN
+F 2 "" H 9600 950 50  0001 C CNN
+F 3 "" H 9600 950 50  0001 C CNN
+	1    9600 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5D753D1F
+P 4550 950
+F 0 "J2" V 4514 862 50  0000 R CNN
+F 1 "Conn_01x01" V 4423 862 50  0000 R CNN
+F 2 "MountingHole:MountingHole_3mm_Pad" H 4550 950 50  0001 C CNN
+F 3 "~" H 4550 950 50  0001 C CNN
+	1    4550 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 5D7540D7
+P 5000 950
+F 0 "J3" V 4964 862 50  0000 R CNN
+F 1 "Conn_01x01" V 4873 862 50  0000 R CNN
+F 2 "MountingHole:MountingHole_3mm_Pad" H 5000 950 50  0001 C CNN
+F 3 "~" H 5000 950 50  0001 C CNN
+	1    5000 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 5D75441C
+P 5300 950
+F 0 "J4" V 5264 862 50  0000 R CNN
+F 1 "Conn_01x01" V 5173 862 50  0000 R CNN
+F 2 "MountingHole:MountingHole_3mm_Pad" H 5300 950 50  0001 C CNN
+F 3 "~" H 5300 950 50  0001 C CNN
+	1    5300 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 5D75460C
+P 5650 950
+F 0 "J5" V 5614 862 50  0000 R CNN
+F 1 "Conn_01x01" V 5523 862 50  0000 R CNN
+F 2 "MountingHole:MountingHole_3mm_Pad" H 5650 950 50  0001 C CNN
+F 3 "~" H 5650 950 50  0001 C CNN
+	1    5650 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 5D7547CD
+P 4550 1150
+F 0 "#PWR0124" H 4550 900 50  0001 C CNN
+F 1 "GND" H 4555 977 50  0000 C CNN
+F 2 "" H 4550 1150 50  0001 C CNN
+F 3 "" H 4550 1150 50  0001 C CNN
+	1    4550 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5D754CF1
+P 5000 1150
+F 0 "#PWR0125" H 5000 900 50  0001 C CNN
+F 1 "GND" H 5005 977 50  0000 C CNN
+F 2 "" H 5000 1150 50  0001 C CNN
+F 3 "" H 5000 1150 50  0001 C CNN
+	1    5000 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 5D7550D1
+P 5300 1150
+F 0 "#PWR0126" H 5300 900 50  0001 C CNN
+F 1 "GND" H 5305 977 50  0000 C CNN
+F 2 "" H 5300 1150 50  0001 C CNN
+F 3 "" H 5300 1150 50  0001 C CNN
+	1    5300 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 5D7553EE
+P 5650 1150
+F 0 "#PWR0127" H 5650 900 50  0001 C CNN
+F 1 "GND" H 5655 977 50  0000 C CNN
+F 2 "" H 5650 1150 50  0001 C CNN
+F 3 "" H 5650 1150 50  0001 C CNN
+	1    5650 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 5D75630E
+P 8700 1250
+F 0 "#PWR0128" H 8700 1000 50  0001 C CNN
+F 1 "GND" H 8705 1077 50  0000 C CNN
+F 2 "" H 8700 1250 50  0001 C CNN
+F 3 "" H 8700 1250 50  0001 C CNN
+	1    8700 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0129
+U 1 1 5D7568AF
+P 8900 1250
+F 0 "#PWR0129" H 8900 1000 50  0001 C CNN
+F 1 "GND" H 8905 1077 50  0000 C CNN
+F 2 "" H 8900 1250 50  0001 C CNN
+F 3 "" H 8900 1250 50  0001 C CNN
+	1    8900 1250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

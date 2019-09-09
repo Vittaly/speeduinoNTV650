@@ -1,4 +1,4 @@
-update=01.09.2019 22:00:11
+update=06.09.2019 20:39:16
 version=1
 last_client=kicad
 [general]
@@ -261,7 +261,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=GND_MOSFIT
 Clearance=0.3
-TrackWidth=0.6
+TrackWidth=1
 ViaDiameter=1.2
 ViaDrill=0.2
 uViaDiameter=0.3
