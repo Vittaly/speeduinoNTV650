@@ -26,7 +26,7 @@ U 1 1 5D6BFEE4
 P 1300 2100
 F 0 "RV1" H 1403 2146 50  0000 L CNN
 F 1 "ERZV14D220" H 1403 2055 50  0000 L CNN
-F 2 "Varistors:RV_Disc_D12_W3.9_P7.5" V 1230 2100 50  0001 C CNN
+F 2 "Varistors:RV_Disc_D9_W3.3_P5" V 1230 2100 50  0001 C CNN
 F 3 "~" H 1300 2100 50  0001 C CNN
 	1    1300 2100
 	1    0    0    -1  
@@ -48,7 +48,7 @@ U 1 1 5D6C0E6C
 P 1550 1500
 F 0 "D7" H 1550 1284 50  0000 C CNN
 F 1 "1N5818" H 1550 1375 50  0000 C CNN
-F 2 "Diodes_ThroughHole:D_DO-41_SOD81_P7.62mm_Horizontal" H 1550 1325 50  0001 C CNN
+F 2 "Diodes_ThroughHole:D_DO-41_SOD81_P5.08mm_Vertical_KathodeUp" H 1550 1325 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 1550 1500 50  0001 C CNN
 	1    1550 1500
 	-1   0    0    1   
@@ -59,7 +59,7 @@ U 1 1 5D6C14ED
 P 1900 1900
 F 0 "C18" H 2018 1946 50  0000 L CNN
 F 1 "10uF" H 2018 1855 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal" H 1938 1750 50  0001 C CNN
+F 2 "Capacitors_SMD:CP_Elec_5x5.3" H 1938 1750 50  0001 C CNN
 F 3 "~" H 1900 1900 50  0001 C CNN
 	1    1900 1900
 	1    0    0    -1  
@@ -70,7 +70,7 @@ U 1 1 5D6C19A2
 P 2600 1900
 F 0 "C19" H 2715 1946 50  0000 L CNN
 F 1 "0.1uF" H 2715 1855 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal" H 2638 1750 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 2638 1750 50  0001 C CNN
 F 3 "~" H 2600 1900 50  0001 C CNN
 	1    2600 1900
 	1    0    0    -1  
@@ -81,7 +81,7 @@ U 1 1 5D6C36C1
 P 4350 1950
 F 0 "D8" V 4304 2029 50  0000 L CNN
 F 1 "1N5919BG" V 4395 2029 50  0000 L CNN
-F 2 "Diodes_ThroughHole:D_DO-41_SOD81_P7.62mm_Horizontal" H 4350 1775 50  0001 C CNN
+F 2 "Diodes_ThroughHole:D_DO-201_P5.08mm_Vertical_KathodeUp" H 4350 1775 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 4350 1950 50  0001 C CNN
 	1    4350 1950
 	0    1    1    0   
@@ -112,11 +112,11 @@ Wire Wire Line
 	3250 2000 3250 2250
 Connection ~ 3250 2250
 Wire Wire Line
-	3250 2250 4350 2250
+	3250 2250 3650 2250
 Wire Wire Line
 	4350 1700 4350 1750
 Wire Wire Line
-	3550 1700 4350 1700
+	3550 1700 3650 1700
 Connection ~ 1900 1500
 Connection ~ 2350 1500
 Wire Wire Line
@@ -185,4 +185,25 @@ F 3 "" H 4350 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4350 2250
+$Comp
+L Device:CP C20
+U 1 1 5D790B06
+P 3650 1950
+F 0 "C20" H 3768 1996 50  0000 L CNN
+F 1 "47uF" H 3768 1905 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x5.3" H 3688 1800 50  0001 C CNN
+F 3 "~" H 3650 1950 50  0001 C CNN
+	1    3650 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1800 3650 1700
+Connection ~ 3650 1700
+Wire Wire Line
+	3650 1700 4350 1700
+Wire Wire Line
+	3650 2100 3650 2250
+Connection ~ 3650 2250
+Wire Wire Line
+	3650 2250 4350 2250
 $EndSCHEMATC
