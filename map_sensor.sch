@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 15
+Sheet 3 15
 Title ""
 Date ""
 Rev ""
@@ -35,7 +35,7 @@ U 1 1 5D61FACC
 P 1950 1450
 F 0 "R7" V 1743 1450 50  0000 C CNN
 F 1 "750" V 1834 1450 50  0000 C CNN
-F 2 "Resistor_SMD:R_2010_5025Metric" V 1880 1450 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1880 1450 50  0001 C CNN
 F 3 "~" H 1950 1450 50  0001 C CNN
 	1    1950 1450
 	0    1    1    0   
@@ -48,7 +48,7 @@ U 1 1 5D6205A4
 P 2350 1850
 F 0 "C4" H 2465 1896 50  0000 L CNN
 F 1 "0.3uF" H 2465 1805 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal" H 2388 1700 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2388 1700 50  0001 C CNN
 F 3 "~" H 2350 1850 50  0001 C CNN
 	1    2350 1850
 	1    0    0    -1  
@@ -70,7 +70,7 @@ U 1 1 5D629BB2
 P 2700 2250
 F 0 "C5" V 2448 2250 50  0000 C CNN
 F 1 "1uF" V 2539 2250 50  0000 C CNN
-F 2 "Capacitors_ThroughHole:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal" H 2738 2100 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2738 2100 50  0001 C CNN
 F 3 "~" H 2700 2250 50  0001 C CNN
 	1    2700 2250
 	0    1    1    0   
@@ -81,7 +81,7 @@ U 1 1 5D62B2EC
 P 2700 2450
 F 0 "C6" V 2448 2450 50  0000 C CNN
 F 1 "0.01uF" V 2539 2450 50  0000 C CNN
-F 2 "Capacitors_ThroughHole:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal" H 2738 2300 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2738 2300 50  0001 C CNN
 F 3 "~" H 2700 2450 50  0001 C CNN
 	1    2700 2450
 	0    1    1    0   

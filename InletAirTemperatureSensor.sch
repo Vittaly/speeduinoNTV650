@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 15
+Sheet 6 15
 Title ""
 Date ""
 Rev ""
@@ -25,7 +25,7 @@ AR Path="/5D633C36/5D63C6E2" Ref="C?"  Part="1"
 AR Path="/5D63B349/5D63C6E2" Ref="C11"  Part="1" 
 F 0 "C11" H 4115 3446 50  0000 L CNN
 F 1 "0.1uF" H 4115 3355 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal" H 4038 3250 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4038 3250 50  0001 C CNN
 F 3 "~" H 4000 3400 50  0001 C CNN
 	1    4000 3400
 	1    0    0    -1  
@@ -39,7 +39,7 @@ AR Path="/5D633C36/5D63C6E8" Ref="C?"  Part="1"
 AR Path="/5D63B349/5D63C6E8" Ref="C12"  Part="1" 
 F 0 "C12" H 4815 3446 50  0000 L CNN
 F 1 "0.22uF" H 4815 3355 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal" H 4738 3250 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4738 3250 50  0001 C CNN
 F 3 "~" H 4700 3400 50  0001 C CNN
 	1    4700 3400
 	1    0    0    -1  
@@ -53,7 +53,7 @@ AR Path="/5D633C36/5D63C6EE" Ref="R?"  Part="1"
 AR Path="/5D63B349/5D63C6EE" Ref="R11"  Part="1" 
 F 0 "R11" V 4343 2700 50  0000 C CNN
 F 1 "470" V 4434 2700 50  0000 C CNN
-F 2 "Resistor_SMD:R_2010_5025Metric" V 4480 2700 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4480 2700 50  0001 C CNN
 F 3 "~" H 4550 2700 50  0001 C CNN
 	1    4550 2700
 	0    1    1    0   
@@ -119,7 +119,7 @@ AR Path="/5D633C36/5D63C8DD" Ref="R?"  Part="1"
 AR Path="/5D63B349/5D63C8DD" Ref="R10"  Part="1" 
 F 0 "R10" V 3643 1750 50  0000 C CNN
 F 1 "2.49K" V 3734 1750 50  0000 C CNN
-F 2 "Resistor_SMD:R_2010_5025Metric" V 3780 1750 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3780 1750 50  0001 C CNN
 F 3 "~" H 3850 1750 50  0001 C CNN
 	1    3850 1750
 	0    1    1    0   

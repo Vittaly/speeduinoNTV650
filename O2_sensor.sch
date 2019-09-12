@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 15
+Sheet 4 15
 Title ""
 Date ""
 Rev ""
@@ -20,7 +20,7 @@ U 1 1 5D631A96
 P 2800 3000
 F 0 "C7" H 2915 3046 50  0000 L CNN
 F 1 "0.1uF" H 2915 2955 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal" H 2838 2850 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2838 2850 50  0001 C CNN
 F 3 "~" H 2800 3000 50  0001 C CNN
 	1    2800 3000
 	1    0    0    -1  
@@ -31,7 +31,7 @@ U 1 1 5D631E33
 P 3500 3000
 F 0 "C8" H 3615 3046 50  0000 L CNN
 F 1 "0.22uF" H 3615 2955 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal" H 3538 2850 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3538 2850 50  0001 C CNN
 F 3 "~" H 3500 3000 50  0001 C CNN
 	1    3500 3000
 	1    0    0    -1  
@@ -42,7 +42,7 @@ U 1 1 5D631EDD
 P 3350 2300
 F 0 "R8" V 3143 2300 50  0000 C CNN
 F 1 "470" V 3234 2300 50  0000 C CNN
-F 2 "Resistor_SMD:R_2010_5025Metric" V 3280 2300 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3280 2300 50  0001 C CNN
 F 3 "~" H 3350 2300 50  0001 C CNN
 	1    3350 2300
 	0    1    1    0   
