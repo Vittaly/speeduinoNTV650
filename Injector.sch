@@ -50,7 +50,7 @@ AR Path="/5D65DEE2/5D663BD7" Ref="D2"  Part="1"
 AR Path="/5D676664/5D663BD7" Ref="D4"  Part="1" 
 F 0 "D4" H 3150 1634 50  0000 C CNN
 F 1 "D" H 3150 1725 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 3150 1850 50  0001 C CNN
+F 2 "Diodes_ThroughHole:D_A-405_P2.54mm_Vertical_AnodeUp" H 3150 1850 50  0001 C CNN
 F 3 "~" H 3150 1850 50  0001 C CNN
 	1    3150 1850
 	-1   0    0    1   
