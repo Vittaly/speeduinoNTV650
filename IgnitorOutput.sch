@@ -49,7 +49,7 @@ F 1 "160" H 4580 2195 50  0000 R CNN
 F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 4580 2150 50  0001 C CNN
 F 3 "~" H 4650 2150 50  0001 C CNN
 	1    4650 2150
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R28
@@ -115,7 +115,7 @@ U 1 1 5D696903
 P 3850 2250
 F 0 "IC2" H 3850 2525 50  0000 C CNN
 F 1 "TC4424" H 3850 2434 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3850 2250 50  0001 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 3850 2250 50  0001 C CNN
 F 3 "" H 3850 2250 50  0001 C CNN
 	1    3850 2250
 	1    0    0    -1  
