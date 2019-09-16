@@ -358,7 +358,7 @@ Wire Wire Line
 Wire Wire Line
 	900  6450 2900 6450
 Wire Wire Line
-	2900 6450 2900 7000
+	2900 6450 2900 6600
 Wire Wire Line
 	2900 7000 2450 7000
 Wire Wire Line
@@ -382,8 +382,6 @@ Wire Wire Line
 	4300 7000 4300 6600
 Wire Wire Line
 	4300 6600 4100 6600
-Wire Wire Line
-	3800 6600 2900 6600
 $Comp
 L power:GND #PWR0130
 U 1 1 5D7BB537
@@ -395,4 +393,9 @@ F 3 "" H 4100 7000 50  0001 C CNN
 	1    4100 7000
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	3800 6600 2900 6600
+Connection ~ 2900 6600
+Wire Wire Line
+	2900 6600 2900 7000
 $EndSCHEMATC

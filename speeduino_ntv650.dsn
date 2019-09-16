@@ -45,47 +45,47 @@
     )
   )
   (placement
-    (component "Housings_DIP:DIP-8_W7.62mm"
-      (place IC2 100160 -109200 front 180 (PN TC4424))
+    (component "Diodes_SMD:D_SOD-323_HandSoldering"
+      (place D4 60320 -131370 front 270 (PN D))
+      (place D2 60320 -138060 front 270 (PN D))
     )
-    (component "Diodes_ThroughHole:D_A-405_P2.54mm_Vertical_AnodeUp"
-      (place D4 63210 -131830 front 270 (PN D))
-      (place D2 63120 -138520 front 270 (PN D))
+    (component "Housings_DIP:DIP-8_W7.62mm"
+      (place IC2 91190 -109500 front 180 (PN TC4424))
     )
     (component Varistors:RV_Disc_D15.5_W3.9_P7.5
       (place RV1 54190 -74970 front 90 (PN ERZV14D220))
     )
     (component Resistors_SMD:R_0805_HandSoldering
-      (place R32 80050 -136350 front 180 (PN 1K))
-      (place R31 80340 -141360 front 0 (PN 100K))
-      (place R28 55600 -152010 front 90 (PN 2.4K))
-      (place R27 62170 -151470 front 90 (PN 2.4K))
+      (place R32 80000 -152520 front 180 (PN 1K))
+      (place R31 79730 -135990 front 0 (PN 100K))
+      (place R28 59640 -158020 front 90 (PN 2.4K))
+      (place R27 59868 -151630 front 90 (PN 2.4K))
       (place R26 106200 -94320 front 270 (PN 100K))
-      (place R25 115140 -101620 front 270 (PN 100K))
-      (place R24 120320 -144700 front 270 (PN 1K))
-      (place R23 113110 -137350 front 270 (PN 1K))
-      (place R22 79810 -126300 front 180 (PN 1K))
+      (place R25 101440 -108730 front 270 (PN 100K))
+      (place R24 113660 -144310 front 270 (PN 1K))
+      (place R23 113810 -151000 front 270 (PN 1K))
+      (place R22 80030 -127730 front 0 (PN 1K))
       (place R21 79930 -131710 front 0 (PN 100K))
-      (place R20 55350 -130310 front 0 (PN 2.4K))
-      (place R19 112930 -144650 front 90 (PN 1K))
-      (place R18 96250 -149070 front 180 (PN 100K))
-      (place R17 55300 -139380 front 0 (PN 2.4K))
-      (place R16 96360 -152410 front 0 (PN 470))
-      (place R15 105890 -101200 front 90 (PN 2.49K))
-      (place R14 112930 -158010 front 270 (PN 470))
+      (place R20 54130 -130760 front 0 (PN 2.4K))
+      (place R19 97430 -154780 front 0 (PN 1K))
+      (place R18 97470 -149830 front 180 (PN 100K))
+      (place R17 54130 -139830 front 0 (PN 2.4K))
+      (place R16 97430 -129690 front 0 (PN 470))
+      (place R15 96920 -101500 front 90 (PN 2.49K))
+      (place R14 113050 -129550 front 90 (PN 470))
       (place R13 120680 -122780 front 270 (PN 1K))
       (place R12 120320 -115740 front 90 (PN 3.9K))
-      (place R11 80030 -156760 front 180 (PN 470))
-      (place R10 113290 -151880 front 270 (PN 2.49K))
-      (place R9 112930 -115430 front 90 (PN 470))
-      (place R8 96230 -144060 front 0 (PN 470))
+      (place R11 120470 -109330 front 90 (PN 470))
+      (place R10 95470 -70880 front 270 (PN 2.49K))
+      (place R9 113070 -116040 front 90 (PN 470))
+      (place R8 97450 -144820 front 0 (PN 470))
       (place R7 100900 -70580 front 90 (PN 750))
       (place R6 109020 -71010 front 270 (PN 10k))
       (place R5 105190 -70710 front 270 (PN 10k))
       (place R4 113050 -71050 front 270 (PN 10k))
       (place R3 117020 -71120 front 270 (PN 10k))
-      (place R2 80210 -145210 front 0 (PN 1k))
-      (place R1 117020 -94570 front 270 (PN 1k))
+      (place R2 79770 -140020 front 0 (PN 1k))
+      (place R1 106760 -101380 front 270 (PN 1k))
     )
     (component Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical
       (place R30 76890 -70030 front 270 (PN 160))
@@ -93,30 +93,30 @@
     )
     (component LEDs:LED_0805_HandSoldering
       (place D6 55600 -157920 front 270 (PN "LED AGN1"))
-      (place D5 60520 -158950 front 90 (PN "LED AGN2"))
-      (place D3 55260 -134870 front 180 (PN "LED INJ"))
-      (place D1 55130 -145250 front 180 (PN "LED INJ"))
+      (place D5 55530 -151780 front 90 (PN "LED AGN2"))
+      (place D3 54130 -135320 front 180 (PN "LED INJ"))
+      (place D1 54130 -145700 front 180 (PN "LED INJ"))
     )
     (component Capacitors_SMD:C_0805_HandSoldering
       (place C19 67910 -96050 front 90 (PN 0.1uF))
-      (place C17 111020 -101360 front 90 (PN 1uF))
-      (place C16 96380 -134230 front 180 (PN 0.22uF))
+      (place C17 102050 -101660 front 90 (PN 1uF))
+      (place C16 97600 -134990 front 180 (PN 0.22uF))
       (place C15 111210 -94610 front 90 (PN 0.1uF))
-      (place C14 113110 -122900 front 90 (PN 0.22uF))
-      (place C13 120320 -150750 front 270 (PN 0.1uF))
-      (place C12 80320 -151750 front 180 (PN 0.22uF))
+      (place C14 112960 -122493 front 90 (PN 0.22uF))
+      (place C13 120340 -137210 front 270 (PN 0.1uF))
+      (place C12 118040 -101570 front 90 (PN 0.22uF))
       (place C11 121260 -70930 front 270 (PN 0.1uF))
-      (place C10 96320 -139430 front 180 (PN 0.22uF))
-      (place C9 120190 -108680 front 270 (PN 0.1uF))
-      (place C8 120680 -137210 front 270 (PN 0.22uF))
-      (place C7 120140 -130530 front 90 (PN 0.1uF))
-      (place C6 121270 -101260 front 270 (PN 0.01uF))
-      (place C5 80170 -148340 front 0 (PN 1uF))
-      (place C4 114960 -108660 front 90 (PN 0.3uF))
+      (place C10 97540 -140190 front 180 (PN 0.22uF))
+      (place C9 111220 -108980 front 270 (PN 0.1uF))
+      (place C8 113200 -136960 front 270 (PN 0.22uF))
+      (place C7 120500 -129350 front 90 (PN 0.1uF))
+      (place C6 112300 -101560 front 270 (PN 0.01uF))
+      (place C5 79740 -143670 front 0 (PN 1uF))
+      (place C4 105990 -108960 front 90 (PN 0.3uF))
       (place C21 106790 -75840 front 0 (PN 1nF))
       (place C3 115200 -76010 front 180 (PN 1nF))
-      (place C2 112930 -129940 front 90 (PN 0.22mF))
-      (place C1 107380 -108130 front 90 (PN 0.01mF))
+      (place C2 80040 -148240 front 0 (PN 0.22mF))
+      (place C1 95860 -108710 front 90 (PN 0.01mF))
     )
     (component "Housings_SSOP:QSOP-16_3.9x4.9mm_Pitch0.635mm"
       (place P1 111700 -84910 front 270 (PN MAX9926_9927))
@@ -147,18 +147,39 @@
     )
     (component "TO_SOT_Packages_THT:TO-220-3_Vertical"
       (place U1 61860 -87200 front 90 (PN LM2937xT))
-      (place Q3 54920 -123340 front 0 (PN STP62NS04Z))
-      (place Q2 59300 -115130 front 180 (PN STP62NS04Z))
-      (place Q1 56220 -105250 front 0 (PN STP62NS04Z))
+      (place Q3 59940 -124080 front 180 (PN STP62NS04Z))
+      (place Q2 59640 -115870 front 180 (PN STP62NS04Z))
+      (place Q1 59480 -106740 front 180 (PN STP62NS04Z))
     )
     (component "Housings_SOIC:SOIC-8-1EP_3.9x4.9mm_Pitch1.27mm"
-      (place IC1 88117.5 -150212 front 270 (PN SP721))
+      (place IC1 89982.5 -122818 front 180 (PN SP721))
     )
     (component "ntv650_ecu:A4988 Stepper Motor Driver Carrier"
       (place A1 82840 -96380 front 90 (PN Pololu_Breakout_A4988))
     )
   )
   (library
+    (image "Diodes_SMD:D_SOD-323_HandSoldering"
+      (outline (path signal 120  -1900 850  -1900 -850))
+      (outline (path signal 100  200 0  450 0))
+      (outline (path signal 100  200 -350  -300 0))
+      (outline (path signal 100  200 350  200 -350))
+      (outline (path signal 100  -300 0  200 350))
+      (outline (path signal 100  -300 0  -500 0))
+      (outline (path signal 100  -300 350  -300 -350))
+      (outline (path signal 100  -900 -700  -900 700))
+      (outline (path signal 100  900 -700  -900 -700))
+      (outline (path signal 100  900 700  900 -700))
+      (outline (path signal 100  -900 700  900 700))
+      (outline (path signal 50  -2000 950  2000 950))
+      (outline (path signal 50  2000 950  2000 -950))
+      (outline (path signal 50  -2000 -950  2000 -950))
+      (outline (path signal 50  -2000 950  -2000 -950))
+      (outline (path signal 120  -1900 -850  1250 -850))
+      (outline (path signal 120  -1900 850  1250 850))
+      (pin Rect[T]Pad_1000x1000_um 1 -1250 0)
+      (pin Rect[T]Pad_1000x1000_um 2 1250 0)
+    )
     (image "Housings_DIP:DIP-8_W7.62mm"
       (outline (path signal 100  1635 1270  6985 1270))
       (outline (path signal 100  6985 1270  6985 -8890))
@@ -182,24 +203,6 @@
       (pin Oval[A]Pad_1600x1600_um 7 7620 -2540)
       (pin Oval[A]Pad_1600x1600_um 4 0 -7620)
       (pin Oval[A]Pad_1600x1600_um 8 7620 0)
-    )
-    (image "Diodes_ThroughHole:D_A-405_P2.54mm_Vertical_AnodeUp"
-      (outline (path signal 100  0 0  2540 0))
-      (outline (path signal 120  1397 -1080  1397 -1969))
-      (outline (path signal 120  1397 -1524.5  1989.67 -1080))
-      (outline (path signal 120  1989.67 -1080  1989.67 -1969))
-      (outline (path signal 120  1989.67 -1969  1397 -1524.5))
-      (outline (path signal 50  -1700 1700  -1700 -1700))
-      (outline (path signal 50  -1700 -1700  3750 -1700))
-      (outline (path signal 50  3750 -1700  3750 1700))
-      (outline (path signal 50  3750 1700  -1700 1700))
-      (outline (path signal 100  1350 0  1268.59 -461.727  1034.16 -867.763  675 -1169.13
-            234.425 -1329.49  -234.425 -1329.49  -675 -1169.13  -1034.16 -867.763
-            -1268.59 -461.727  -1350 0  -1268.59 461.727  -1034.16 867.763
-            -675 1169.13  -234.425 1329.49  234.425 1329.49  675 1169.13
-            1034.16 867.763  1268.59 461.727  1350 0))
-      (pin Rect[A]Pad_1800x1800_um 1 0 0)
-      (pin Oval[A]Pad_1800x1800_um 2 2540 0)
     )
     (image Varistors:RV_Disc_D15.5_W3.9_P7.5
       (outline (path signal 50  -4250 -2900  11750 -2900))
@@ -749,6 +752,10 @@
       (shape (rect F.Cu -1750 -800 1750 800))
       (attach off)
     )
+    (padstack Rect[T]Pad_1000x1000_um
+      (shape (rect F.Cu -500 -500 500 500))
+      (attach off)
+    )
     (padstack Rect[T]Pad_1175x1175_um
       (shape (rect F.Cu -587.5 -587.5 587.5 587.5))
       (attach off)
@@ -798,8 +805,8 @@
       (pins ARD1-17 A1-15)
     )
     (net 5V
-      (pins IC2-6 R15-1 R10-1 C17-1 C6-1 C5-1 R2-1 R1-1 P1-14 D8-1 C20-1 J1-4 ARD1-81
-        ARD1-88 U1-3 IC1-8 A1-2 A1-13 A1-14)
+      (pins IC2-6 R15-1 R10-1 C17-1 C6-1 C5-1 R2-1 R1-1 P1-14 D8-1 C20-1 ARD1-81 ARD1-88
+        U1-3 IC1-8 A1-2 A1-13 A1-14)
     )
     (net "STEPEN-CPU-D24"
       (pins ARD1-24 A1-9)
@@ -857,7 +864,7 @@
       (pins R22-2 R21-1 ARD1-9)
     )
     (net "TACH2-CPU-D18"
-      (pins R2-2 P1-5 ARD1-18)
+      (pins R2-2 P1-5 C2-2 ARD1-18)
     )
     (net "INJ1-CPU-D8"
       (pins R19-2 R18-1 ARD1-8)
@@ -966,7 +973,7 @@
     )
     (class kicad_default "" "ADC-Clamp1" "ADC-Clamp2" "ADC-Clamp3" "ADC-Clamp4"
       "ADC-Clamp5" "ADC-Clamp6" CLT_sens "IDLE-CPU-D6" "IGN1-CPU-D40" "IGN2-CPU-D38"
-      "INJ1-CPU-D8" "INJ2-CPU-D9" ITS_sens MAP "MAP-CPU-A3" "Net-(A1-Pad10)"
+      "INJ1-CPU-D8" "INJ2-CPU-D9" ITS_sens MAP "MAP-CPU-A3" MAP_5V "Net-(A1-Pad10)"
       "Net-(A1-Pad11)" "Net-(A1-Pad12)" "Net-(ARD1-Pad0)" "Net-(ARD1-Pad1)"
       "Net-(ARD1-Pad10)" "Net-(ARD1-Pad11)" "Net-(ARD1-Pad12)" "Net-(ARD1-Pad13)"
       "Net-(ARD1-Pad14)" "Net-(ARD1-Pad15)" "Net-(ARD1-Pad2)" "Net-(ARD1-Pad20)"

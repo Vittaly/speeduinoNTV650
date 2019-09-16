@@ -62,8 +62,6 @@ Wire Wire Line
 	1250 1450 1800 1450
 Wire Wire Line
 	2350 1450 4000 1450
-Text GLabel 4000 2250 2    50   Input ~ 0
-MAP_5V
 $Comp
 L Device:C C5
 U 1 1 5D629BB2
@@ -101,6 +99,6 @@ Wire Wire Line
 Wire Wire Line
 	2850 2250 4000 2250
 Connection ~ 2850 2250
-Text GLabel 3600 2250 1    50   Input ~ 0
+Text GLabel 4000 2250 2    50   Input ~ 0
 5V
 $EndSCHEMATC
