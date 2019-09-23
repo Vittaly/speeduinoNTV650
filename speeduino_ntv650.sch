@@ -64,7 +64,7 @@ MAP-CPU-A3
 Wire Wire Line
 	6450 5700 6750 5700
 Text GLabel 8800 1250 3    50   Input ~ 0
-MAP_5V
+5V
 $Comp
 L power:GND #PWR01
 U 1 1 5D627F7E

@@ -46,8 +46,8 @@
   )
   (placement
     (component "Diodes_SMD:D_SOD-323_HandSoldering"
-      (place D4 60320 -131370 front 270 (PN D))
-      (place D2 60320 -138060 front 270 (PN D))
+      (place D4 60120 -135370 front 180 (PN D))
+      (place D2 60610 -145290 front 180 (PN D))
     )
     (component "Housings_DIP:DIP-8_W7.62mm"
       (place IC2 91190 -109500 front 180 (PN TC4424))
@@ -58,8 +58,8 @@
     (component Resistors_SMD:R_0805_HandSoldering
       (place R32 80000 -152520 front 180 (PN 1K))
       (place R31 79730 -135990 front 0 (PN 100K))
-      (place R28 59640 -158020 front 90 (PN 2.4K))
-      (place R27 59868 -151630 front 90 (PN 2.4K))
+      (place R28 60120 -156520 front 0 (PN 2.4K))
+      (place R27 60560 -150590 front 0 (PN 2.4K))
       (place R26 106200 -94320 front 270 (PN 100K))
       (place R25 101440 -108730 front 270 (PN 100K))
       (place R24 113660 -144310 front 270 (PN 1K))
@@ -92,13 +92,13 @@
       (place R29 81460 -70140 front 270 (PN 160))
     )
     (component LEDs:LED_0805_HandSoldering
-      (place D6 55600 -157920 front 270 (PN "LED AGN1"))
-      (place D5 55530 -151780 front 90 (PN "LED AGN2"))
+      (place D6 53990 -156720 front 0 (PN "LED AGN1"))
+      (place D5 53990 -150560 front 0 (PN "LED AGN2"))
       (place D3 54130 -135320 front 180 (PN "LED INJ"))
       (place D1 54130 -145700 front 180 (PN "LED INJ"))
     )
     (component Capacitors_SMD:C_0805_HandSoldering
-      (place C19 67910 -96050 front 90 (PN 0.1uF))
+      (place C19 67910 -96050 front 270 (PN 0.1uF))
       (place C17 102050 -101660 front 90 (PN 1uF))
       (place C16 97600 -134990 front 180 (PN 0.22uF))
       (place C15 111210 -94610 front 90 (PN 0.1uF))
@@ -131,7 +131,7 @@
       (place C20 54630 -96370 front 90 (PN 47uF))
     )
     (component Capacitors_SMD:CP_Elec_5x5.3
-      (place C18 61850 -96220 front 90 (PN 10uF))
+      (place C18 61850 -96220 front 270 (PN 10uF))
     )
     (component MountingHole:MountingHole_3mm_Pad
       (place J5 119825 -166125 front 0 (PN Conn_01x01))
@@ -805,8 +805,8 @@
       (pins ARD1-17 A1-15)
     )
     (net 5V
-      (pins IC2-6 R15-1 R10-1 C17-1 C6-1 C5-1 R2-1 R1-1 P1-14 D8-1 C20-1 ARD1-81 ARD1-88
-        U1-3 IC1-8 A1-2 A1-13 A1-14)
+      (pins IC2-6 R15-1 R10-1 C17-1 C6-1 C5-1 R2-1 R1-1 P1-14 D8-1 C20-1 J1-4 ARD1-81
+        ARD1-88 U1-3 IC1-8 A1-2 A1-13 A1-14)
     )
     (net "STEPEN-CPU-D24"
       (pins ARD1-24 A1-9)
@@ -973,7 +973,7 @@
     )
     (class kicad_default "" "ADC-Clamp1" "ADC-Clamp2" "ADC-Clamp3" "ADC-Clamp4"
       "ADC-Clamp5" "ADC-Clamp6" CLT_sens "IDLE-CPU-D6" "IGN1-CPU-D40" "IGN2-CPU-D38"
-      "INJ1-CPU-D8" "INJ2-CPU-D9" ITS_sens MAP "MAP-CPU-A3" MAP_5V "Net-(A1-Pad10)"
+      "INJ1-CPU-D8" "INJ2-CPU-D9" ITS_sens MAP "MAP-CPU-A3" "Net-(A1-Pad10)"
       "Net-(A1-Pad11)" "Net-(A1-Pad12)" "Net-(ARD1-Pad0)" "Net-(ARD1-Pad1)"
       "Net-(ARD1-Pad10)" "Net-(ARD1-Pad11)" "Net-(ARD1-Pad12)" "Net-(ARD1-Pad13)"
       "Net-(ARD1-Pad14)" "Net-(ARD1-Pad15)" "Net-(ARD1-Pad2)" "Net-(ARD1-Pad20)"
@@ -992,9 +992,9 @@
       "Net-(ARD1-Pad74)" "Net-(ARD1-Pad75)" "Net-(ARD1-Pad76)" "Net-(ARD1-Pad77)"
       "Net-(ARD1-Pad78)" "Net-(ARD1-Pad79)" "Net-(ARD1-Pad82)" "Net-(ARD1-Pad83)"
       "Net-(ARD1-Pad84)" "Net-(ARD1-Pad85)" "Net-(ARD1-Pad86)" "Net-(C13-Pad1)"
-      "Net-(C2-Pad2)" "Net-(C21-Pad1)" "Net-(C21-Pad2)" "Net-(C3-Pad1)" "Net-(C3-Pad2)"
-      "Net-(D1-Pad1)" "Net-(D1-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(D5-Pad2)"
-      "Net-(D6-Pad2)" "Net-(IC2-Pad1)" "Net-(IC2-Pad2)" "Net-(IC2-Pad4)" "Net-(IC2-Pad8)"
+      "Net-(C21-Pad1)" "Net-(C21-Pad2)" "Net-(C3-Pad1)" "Net-(C3-Pad2)" "Net-(D1-Pad1)"
+      "Net-(D1-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(D5-Pad2)" "Net-(D6-Pad2)"
+      "Net-(IC2-Pad1)" "Net-(IC2-Pad2)" "Net-(IC2-Pad4)" "Net-(IC2-Pad8)"
       "Net-(P1-Pad12)" "Net-(P1-Pad2)" "Net-(P1-Pad7)" "Net-(Q1-Pad1)" "Net-(Q2-Pad1)"
       "Net-(Q3-Pad1)" O2_sens "STEP-CPU-D17" "STEPDIR-CPU-D16" "STEPEN-CPU-D24"
       "TACH2-CPU-D18" TPS_sens VR1+ "VR1-" VR2+ "VR2-"
@@ -1006,7 +1006,7 @@
         (clearance 200.1)
       )
     )
-    (class 5v_small
+    (class 5v_small MAP_5V
       (circuit
         (use_via Via[0-1]_1200:200_um)
       )
