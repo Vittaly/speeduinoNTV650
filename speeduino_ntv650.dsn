@@ -165,7 +165,7 @@
       (place D1 116350 -119902 front 180 (PN "LED INJ"))
     )
     (component Capacitors_SMD:C_0805_HandSoldering
-      (place C19 133140 -77860 front 270 (PN 0.1uF))
+      (place C19 130770 -77060 front 270 (PN 0.1uF))
       (place C17 160242 -86600 front 90 (PN 1uF))
       (place C16 156220 -127430 front 180 (PN 0.22uF))
       (place C15 160242 -92710 front 90 (PN 0.1uF))
@@ -192,19 +192,19 @@
       (place D8 122390 -69590 front 180 (PN 1N5919BG))
     )
     (component "Diodes_ThroughHole:D_DO-41_SOD81_P5.08mm_Vertical_KathodeUp"
-      (place D7 128810 -65640 front 270 (PN 1N5818))
+      (place D7 127770 -65860 front 270 (PN 1N5818))
     )
     (component Capacitors_SMD:CP_Elec_6.3x5.3
       (place C20 117930 -78070 front 90 (PN 47uF))
     )
     (component Capacitors_SMD:CP_Elec_5x5.3
-      (place C18 127130 -77700 front 270 (PN 10uF))
+      (place C18 125310 -78790 front 270 (PN 10uF))
     )
     (component ntv650_ecu:ArduinoMegaProMini
       (place ARD1 142765 -109185 front 0 (PN ArduinoMegaProMini))
     )
     (component "TO_SOT_Packages_THT:TO-220-3_Vertical"
-      (place U1 128380 -54990 front 270 (PN LM2937xT))
+      (place U1 127040 -54840 front 270 (PN LM2937xT))
       (place Q3 134810 -87680 front 270 (PN STP62NS04Z))
       (place Q2 126600 -87980 front 270 (PN STP62NS04Z))
       (place Q1 117470 -88140 front 270 (PN STP62NS04Z))
