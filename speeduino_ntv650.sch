@@ -344,7 +344,7 @@ U 1 1 5D753D1F
 P 4550 950
 F 0 "J2" V 4514 862 50  0000 R CNN
 F 1 "Conn_01x01" V 4423 862 50  0000 R CNN
-F 2 "Mounting_Holes:MountingHole_3mm_Pad_Via" H 4550 950 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 4550 950 50  0001 C CNN
 F 3 "~" H 4550 950 50  0001 C CNN
 	1    4550 950 
 	0    -1   -1   0   
@@ -355,7 +355,7 @@ U 1 1 5D7540D7
 P 5000 950
 F 0 "J3" V 4964 862 50  0000 R CNN
 F 1 "Conn_01x01" V 4873 862 50  0000 R CNN
-F 2 "Mounting_Holes:MountingHole_3mm_Pad_Via" H 5000 950 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 5000 950 50  0001 C CNN
 F 3 "~" H 5000 950 50  0001 C CNN
 	1    5000 950 
 	0    -1   -1   0   
@@ -366,7 +366,7 @@ U 1 1 5D75441C
 P 5300 950
 F 0 "J4" V 5264 862 50  0000 R CNN
 F 1 "Conn_01x01" V 5173 862 50  0000 R CNN
-F 2 "Mounting_Holes:MountingHole_3mm_Pad_Via" H 5300 950 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 5300 950 50  0001 C CNN
 F 3 "~" H 5300 950 50  0001 C CNN
 	1    5300 950 
 	0    -1   -1   0   
@@ -377,7 +377,7 @@ U 1 1 5D75460C
 P 5650 950
 F 0 "J5" V 5614 862 50  0000 R CNN
 F 1 "Conn_01x01" V 5523 862 50  0000 R CNN
-F 2 "Mounting_Holes:MountingHole_3mm_Pad_Via" H 5650 950 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 5650 950 50  0001 C CNN
 F 3 "~" H 5650 950 50  0001 C CNN
 	1    5650 950 
 	0    -1   -1   0   
@@ -454,7 +454,7 @@ U 1 1 5D9B8B08
 P 6000 950
 F 0 "J6" V 5964 862 50  0000 R CNN
 F 1 "Conn_01x01" V 5873 862 50  0000 R CNN
-F 2 "Mounting_Holes:MountingHole_3mm_Pad_Via" H 6000 950 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 6000 950 50  0001 C CNN
 F 3 "~" H 6000 950 50  0001 C CNN
 	1    6000 950 
 	0    -1   -1   0   
@@ -476,7 +476,7 @@ U 1 1 5D9B919E
 P 6300 950
 F 0 "J7" V 6264 862 50  0000 R CNN
 F 1 "Conn_01x01" V 6173 862 50  0000 R CNN
-F 2 "Mounting_Holes:MountingHole_3mm_Pad_Via" H 6300 950 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 6300 950 50  0001 C CNN
 F 3 "~" H 6300 950 50  0001 C CNN
 	1    6300 950 
 	0    -1   -1   0   
