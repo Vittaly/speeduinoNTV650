@@ -151,7 +151,7 @@
 
   (net_class Default "Это класс цепей по умолчанию."
     (clearance 0.2)
-    (trace_width 0.55)
+    (trace_width 0.6)
     (via_dia 1.2)
     (via_drill 0.2)
     (uvia_dia 0.3)

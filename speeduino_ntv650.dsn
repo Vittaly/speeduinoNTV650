@@ -24,20 +24,6 @@
       (path pcb 0  186070 -160040  112070 -160040  112070 -41040  186070 -41040
             186070 -160040)
     )
-    (keepout "" (polygon signal 0  180896 -152045  180549 -152086  180210 -152166  179882 -152285
-            179570 -152442  179279 -152634  179011 -152858  178772 -153112
-            178564 -153391  178389 -153694  178251 -154014  178151 -154348
-            178090 -154692  178070 -155040  178090 -155388  178151 -155732
-            178251 -156066  178389 -156386  178564 -156689  178772 -156968
-            179011 -157222  179279 -157446  179570 -157638  179882 -157795
-            180210 -157914  180549 -157994  180896 -158035  181244 -158035
-            181591 -157994  181930 -157914  182258 -157795  182570 -157638
-            182861 -157446  183129 -157222  183368 -156968  183576 -156689
-            183751 -156386  183889 -156066  183989 -155732  184050 -155388
-            184070 -155040  184050 -154692  183989 -154348  183889 -154014
-            183751 -153694  183576 -153391  183368 -153112  183129 -152858
-            182861 -152634  182570 -152442  182258 -152285  181930 -152166
-            181591 -152086  181244 -152045  180896 -152045))
     (keepout "" (polygon signal 0  116896 -152045  116549 -152086  116210 -152166  115882 -152285
             115570 -152442  115279 -152634  115011 -152858  114772 -153112
             114564 -153391  114389 -153694  114251 -154014  114151 -154348
@@ -90,7 +76,7 @@
             131065 -106560))
     (via "Via[0-1]_1200:200_um")
     (rule
-      (width 400)
+      (width 550)
       (clearance 200.1)
       (clearance 200.1 (type default_smd))
       (clearance 50 (type smd_smd))
@@ -123,10 +109,10 @@
       (place R31 139250 -127663 front 0 (PN 100K))
       (place R28 116350 -126396 front 180 (PN 2.4K))
       (place R27 116350 -132870 front 180 (PN 2.4K))
-      (place R26 156610 -92760 front 270 (PN 100K))
-      (place R25 171484 -92810 front 270 (PN 100K))
-      (place R24 171360 -140170 front 270 (PN 1K))
-      (place R23 171440 -148950 front 270 (PN 1K))
+      (place R26 156610 -92710 back 270 (PN 100K))
+      (place R25 171484 -92710 back 270 (PN 100K))
+      (place R24 171370 -141810 front 180 (PN 1K))
+      (place R23 171170 -147190 front 180 (PN 1K))
       (place R22 139250 -118270 front 0 (PN 1K))
       (place R21 139250 -122967 front 0 (PN 100K))
       (place R20 116350 -106930 front 0 (PN 2.4K))
@@ -134,25 +120,25 @@
       (place R18 139250 -137057 front 0 (PN 100K))
       (place R17 122720 -107010 front 0 (PN 2.4K))
       (place R16 155900 -122680 front 0 (PN 470))
-      (place R15 156450 -86760 front 90 (PN 2.49K))
-      (place R14 171140 -123720 front 90 (PN 470))
+      (place R15 156450 -86760 back 270 (PN 2.49K))
+      (place R14 174040 -116200 front 270 (PN 470))
       (place R13 179280 -116270 front 270 (PN 1K))
       (place R12 178920 -108110 front 90 (PN 3.9K))
-      (place R11 181420 -86700 front 90 (PN 470))
+      (place R11 181420 -86700 back 270 (PN 470))
       (place R10 152640 -57250 back 90 (PN 2.49K))
-      (place R9 171070 -108110 front 90 (PN 470))
+      (place R9 174260 -108210 front 90 (PN 470))
       (place R8 156550 -136620 front 0 (PN 470))
       (place R7 156692 -57250 back 270 (PN 750))
       (place R6 164796 -57250 back 90 (PN 10k))
       (place R5 160744 -57250 back 90 (PN 10k))
       (place R4 168848 -57250 back 90 (PN 10k))
       (place R3 172900 -57250 back 90 (PN 10k))
-      (place R2 156550 -141370 front 0 (PN 1k))
-      (place R1 166450 -86700 front 270 (PN 1k))
+      (place R2 181380 -74110 front 270 (PN 1k))
+      (place R1 166450 -86700 back 270 (PN 1k))
     )
     (component Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical
-      (place R30 142410 -78250 front 270 (PN 160))
-      (place R29 146980 -78360 front 270 (PN 160))
+      (place R30 139380 -57230 front 270 (PN 160))
+      (place R29 143950 -57340 front 270 (PN 160))
     )
     (component LEDs:LED_0805_HandSoldering
       (place D6 122770 -126380 front 180 (PN "LED AGN1"))
@@ -162,27 +148,27 @@
     )
     (component Capacitors_SMD:C_0805_HandSoldering
       (place C19 130770 -77060 front 270 (PN 0.1uF))
-      (place C17 161450 -86600 front 90 (PN 1uF))
+      (place C17 161450 -86600 back 90 (PN 1uF))
       (place C16 156220 -127430 front 180 (PN 0.22uF))
-      (place C15 161578 -92710 front 90 (PN 0.1uF))
-      (place C14 171060 -116170 front 90 (PN 0.22uF))
-      (place C13 179460 -132290 front 270 (PN 0.1uF))
-      (place C12 176420 -86600 front 90 (PN 0.22uF))
+      (place C15 161578 -92810 back 90 (PN 0.1uF))
+      (place C14 174230 -123730 front 270 (PN 0.22uF))
+      (place C13 176890 -130460 front 0 (PN 0.1uF))
+      (place C12 176420 -86600 back 270 (PN 0.22uF))
       (place C11 151130 -62000 back 0 (PN 0.1uF))
       (place C10 156440 -132080 front 180 (PN 0.22uF))
-      (place C9 181390 -92710 front 270 (PN 0.1uF))
-      (place C8 171290 -132290 front 270 (PN 0.22uF))
-      (place C7 179100 -123820 front 90 (PN 0.1uF))
-      (place C6 171450 -86600 front 270 (PN 0.01uF))
+      (place C9 181390 -92810 back 90 (PN 0.1uF))
+      (place C8 156580 -141310 front 0 (PN 0.22uF))
+      (place C7 179100 -123820 front 270 (PN 0.1uF))
+      (place C6 171450 -86600 back 270 (PN 0.01uF))
       (place C5 156660 -146230 front 0 (PN 1uF))
-      (place C4 176452 -92710 front 90 (PN 0.3uF))
+      (place C4 176452 -92810 back 90 (PN 0.3uF))
       (place C21 163550 -62240 back 180 (PN 1nF))
       (place C3 171450 -62240 back 0 (PN 1nF))
       (place C2 139150 -141723 front 0 (PN 0.22mF))
-      (place C1 166516 -92710 front 90 (PN 0.01mF))
+      (place C1 166516 -92810 back 90 (PN 0.01mF))
     )
     (component "Housings_SSOP:QSOP-16_3.9x4.9mm_Pitch0.635mm"
-      (place P1 179040 -74410 front 270 (PN MAX9926_9927))
+      (place P1 173550 -74190 front 90 (PN MAX9926_9927))
     )
     (component "Diodes_ThroughHole:D_DO-201_P5.08mm_Vertical_KathodeUp"
       (place D8 122390 -69590 front 180 (PN 1N5919BG))
@@ -201,15 +187,15 @@
     )
     (component "TO_SOT_Packages_THT:TO-220-3_Vertical"
       (place U1 128960 -54840 front 270 (PN LM2937xT))
-      (place Q3 134810 -87680 front 270 (PN STP62NS04Z))
-      (place Q2 126600 -87980 front 270 (PN STP62NS04Z))
-      (place Q1 117470 -88140 front 270 (PN STP62NS04Z))
+      (place Q3 132950 -87270 front 270 (PN STP62NS04Z))
+      (place Q2 125230 -87270 front 270 (PN STP62NS04Z))
+      (place Q1 117470 -87270 front 270 (PN STP62NS04Z))
     )
     (component "Housings_SOIC:SOIC-8-1EP_3.9x4.9mm_Pitch1.27mm"
-      (place IC1 149302 -113358 front 180 (PN SP721))
+      (place IC1 149302 -113358 front 0 (PN SP721))
     )
     (component "ntv650_ecu:A4988 Stepper Motor Driver Carrier"
-      (place A1 150500 -81380 front 90 (PN Pololu_Breakout_A4988))
+      (place A1 141200 -81480 front 90 (PN Pololu_Breakout_A4988))
     )
   )
   (library
@@ -1022,36 +1008,17 @@
     )
     (class kicad_default "" "ADC-Clamp1" "ADC-Clamp2" "ADC-Clamp3" "ADC-Clamp4"
       "ADC-Clamp5" "ADC-Clamp6" CLT_sens "IDLE-CPU-D6" "IGN1-CPU-D40" "IGN2-CPU-D38"
-      "INJ1-CPU-D8" "INJ2-CPU-D9" ITS_sens MAP "MAP-CPU-A3" "Net-(A1-Pad10)"
-      "Net-(A1-Pad11)" "Net-(A1-Pad12)" "Net-(ARD1-Pad0)" "Net-(ARD1-Pad1)"
-      "Net-(ARD1-Pad10)" "Net-(ARD1-Pad11)" "Net-(ARD1-Pad12)" "Net-(ARD1-Pad13)"
-      "Net-(ARD1-Pad14)" "Net-(ARD1-Pad15)" "Net-(ARD1-Pad2)" "Net-(ARD1-Pad20)"
-      "Net-(ARD1-Pad21)" "Net-(ARD1-Pad22)" "Net-(ARD1-Pad23)" "Net-(ARD1-Pad25)"
-      "Net-(ARD1-Pad26)" "Net-(ARD1-Pad27)" "Net-(ARD1-Pad28)" "Net-(ARD1-Pad29)"
-      "Net-(ARD1-Pad3)" "Net-(ARD1-Pad30)" "Net-(ARD1-Pad31)" "Net-(ARD1-Pad32)"
-      "Net-(ARD1-Pad33)" "Net-(ARD1-Pad34)" "Net-(ARD1-Pad35)" "Net-(ARD1-Pad36)"
-      "Net-(ARD1-Pad37)" "Net-(ARD1-Pad39)" "Net-(ARD1-Pad4)" "Net-(ARD1-Pad41)"
-      "Net-(ARD1-Pad42)" "Net-(ARD1-Pad43)" "Net-(ARD1-Pad44)" "Net-(ARD1-Pad45)"
-      "Net-(ARD1-Pad46)" "Net-(ARD1-Pad47)" "Net-(ARD1-Pad48)" "Net-(ARD1-Pad49)"
-      "Net-(ARD1-Pad5)" "Net-(ARD1-Pad50)" "Net-(ARD1-Pad51)" "Net-(ARD1-Pad52)"
-      "Net-(ARD1-Pad53)" "Net-(ARD1-Pad59)" "Net-(ARD1-Pad60)" "Net-(ARD1-Pad61)"
-      "Net-(ARD1-Pad63)" "Net-(ARD1-Pad64)" "Net-(ARD1-Pad65)" "Net-(ARD1-Pad66)"
-      "Net-(ARD1-Pad67)" "Net-(ARD1-Pad68)" "Net-(ARD1-Pad69)" "Net-(ARD1-Pad7)"
-      "Net-(ARD1-Pad70)" "Net-(ARD1-Pad71)" "Net-(ARD1-Pad72)" "Net-(ARD1-Pad73)"
-      "Net-(ARD1-Pad74)" "Net-(ARD1-Pad75)" "Net-(ARD1-Pad76)" "Net-(ARD1-Pad77)"
-      "Net-(ARD1-Pad78)" "Net-(ARD1-Pad79)" "Net-(ARD1-Pad82)" "Net-(ARD1-Pad83)"
-      "Net-(ARD1-Pad84)" "Net-(ARD1-Pad85)" "Net-(ARD1-Pad86)" "Net-(C13-Pad1)"
+      "INJ1-CPU-D8" "INJ2-CPU-D9" ITS_sens MAP "MAP-CPU-A3" "Net-(C13-Pad1)"
       "Net-(C21-Pad1)" "Net-(C21-Pad2)" "Net-(C3-Pad1)" "Net-(C3-Pad2)" "Net-(D1-Pad1)"
       "Net-(D1-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(D5-Pad2)" "Net-(D6-Pad2)"
-      "Net-(IC2-Pad1)" "Net-(IC2-Pad2)" "Net-(IC2-Pad4)" "Net-(IC2-Pad8)"
-      "Net-(P1-Pad12)" "Net-(P1-Pad2)" "Net-(P1-Pad7)" "Net-(Q1-Pad1)" "Net-(Q2-Pad1)"
-      "Net-(Q3-Pad1)" O2_sens "STEP-CPU-D17" "STEPDIR-CPU-D16" "STEPEN-CPU-D24"
-      "TACH2-CPU-D18" TPS_sens VR1+ "VR1-" VR2+ "VR2-"
+      "Net-(IC2-Pad2)" "Net-(IC2-Pad4)" "Net-(Q1-Pad1)" "Net-(Q2-Pad1)" "Net-(Q3-Pad1)"
+      O2_sens "STEP-CPU-D17" "STEPDIR-CPU-D16" "STEPEN-CPU-D24" "TACH2-CPU-D18"
+      TPS_sens VR1+ "VR1-" VR2+ "VR2-"
       (circuit
         (use_via Via[0-1]_1200:200_um)
       )
       (rule
-        (width 400)
+        (width 550)
         (clearance 200.1)
       )
     )
@@ -1060,7 +1027,7 @@
         (use_via Via[0-1]_1200:200_um)
       )
       (rule
-        (width 400)
+        (width 500)
         (clearance 200.1)
       )
     )
@@ -1071,7 +1038,7 @@
       )
       (rule
         (width 1000)
-        (clearance 300.1)
+        (clearance 200.1)
       )
     )
     (class POWER_ENG
@@ -1080,7 +1047,7 @@
       )
       (rule
         (width 800)
-        (clearance 280.1)
+        (clearance 200.1)
       )
     )
     (class Power +12V 12V 5V GND
@@ -1089,7 +1056,7 @@
       )
       (rule
         (width 800)
-        (clearance 220.1)
+        (clearance 200.1)
       )
     )
     (class power_exit "idle-out"
@@ -1098,7 +1065,7 @@
       )
       (rule
         (width 1000)
-        (clearance 300.1)
+        (clearance 200.1)
       )
     )
     (class power_logic
@@ -1106,8 +1073,8 @@
         (use_via Via[0-1]_1200:200_um)
       )
       (rule
-        (width 400)
-        (clearance 300.1)
+        (width 500)
+        (clearance 200.1)
       )
     )
     (class step_engine_exit "STEP-1A-OUT" "STEP-1B-OUT" "STEP-2A-OUT" "STEP-2B-OUT"
@@ -1116,7 +1083,7 @@
       )
       (rule
         (width 600)
-        (clearance 300.1)
+        (clearance 200.1)
       )
     )
   )

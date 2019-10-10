@@ -1,4 +1,4 @@
-update=09.10.2019 7:35:17
+update=10.10.2019 22:28:53
 version=1
 last_client=kicad
 [general]
@@ -38,7 +38,7 @@ MinViaDrill=0.2
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
-TrackWidth1=0.4
+TrackWidth1=0.6
 TrackWidth2=0.36
 TrackWidth3=0.41
 ViaDiameter1=1.2
@@ -240,7 +240,7 @@ Enabled=0
 [pcbnew/Netclasses/Default]
 Name=Default
 Clearance=0.2
-TrackWidth=0.4
+TrackWidth=0.6
 ViaDiameter=1.2
 ViaDrill=0.2
 uViaDiameter=0.3
@@ -251,7 +251,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=5v_small
 Clearance=0.2
-TrackWidth=0.4
+TrackWidth=0.5
 ViaDiameter=1.2
 ViaDrill=0.2
 uViaDiameter=0.3
@@ -261,7 +261,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=GND_MOSFIT
-Clearance=0.3
+Clearance=0.2
 TrackWidth=1
 ViaDiameter=1.2
 ViaDrill=0.2
@@ -272,7 +272,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/3]
 Name=POWER_ENG
-Clearance=0.28
+Clearance=0.2
 TrackWidth=0.8
 ViaDiameter=1.2
 ViaDrill=0.2
@@ -283,7 +283,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/4]
 Name=Power
-Clearance=0.22
+Clearance=0.2
 TrackWidth=0.8
 ViaDiameter=1.2
 ViaDrill=0.2
@@ -294,7 +294,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/5]
 Name=power_exit
-Clearance=0.3
+Clearance=0.2
 TrackWidth=1
 ViaDiameter=1.2
 ViaDrill=0.2
@@ -305,8 +305,8 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/6]
 Name=power_logic
-Clearance=0.3
-TrackWidth=0.4
+Clearance=0.2
+TrackWidth=0.5
 ViaDiameter=1.2
 ViaDrill=0.2
 uViaDiameter=0.3
@@ -316,7 +316,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/7]
 Name=step_engine_exit
-Clearance=0.3
+Clearance=0.2
 TrackWidth=0.6
 ViaDiameter=1.2
 ViaDrill=0.2
