@@ -24,6 +24,10 @@
       (path pcb 0  186070 -160040  112070 -160040  112070 -41040  186070 -41040
             186070 -160040)
     )
+    (plane GND (polygon F.Cu 0  112070 -160030  112070 -41030  186070 -41040  186060 -160030
+            112070 -160030))
+    (plane GND (polygon B.Cu 0  112090 -160010  112070 -41040  186080 -41040  186060 -160020
+            112090 -160010))
     (keepout "" (polygon signal 0  116896 -152045  116549 -152086  116210 -152166  115882 -152285
             115570 -152442  115279 -152634  115011 -152858  114772 -153112
             114564 -153391  114389 -153694  114251 -154014  114151 -154348
@@ -76,13 +80,16 @@
             131065 -106560))
     (via "Via[0-1]_1200:200_um")
     (rule
-      (width 550)
+      (width 600)
       (clearance 200.1)
       (clearance 200.1 (type default_smd))
       (clearance 50 (type smd_smd))
     )
   )
   (placement
+    (component Varistors:RV_Disc_D12_W3.9_P7.5
+      (place RV1 122660 -54070 front 180 (PN ERZV14D220))
+    )
     (component Mounting_Holes:MountingHole_3mm_Pad
       (place J7 179070 -100540 front 0 (PN Conn_01x01))
       (place J6 119070 -100540 front 0 (PN Conn_01x01))
@@ -90,9 +97,6 @@
       (place J4 179070 -61040 front 0 (PN Conn_01x01))
       (place J3 119070 -61040 front 0 (PN Conn_01x01))
       (place J2 119070 -140040 front 0 (PN Conn_01x01))
-    )
-    (component Varistors:RV_Disc_D9_W3.3_P5
-      (place RV1 120870 -54680 front 180 (PN ERZV14D220))
     )
     (component "ntv650_ecu:DSUB-25_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm"
       (place J1 132420 -47610 front 180 (PN DB25_Female_MountingHoles))
@@ -199,6 +203,18 @@
     )
   )
   (library
+    (image Varistors:RV_Disc_D12_W3.9_P7.5
+      (outline (path signal 50  -2500 -2900  10000 -2900))
+      (outline (path signal 50  -2500 1500  10000 1500))
+      (outline (path signal 50  10000 1500  10000 -2900))
+      (outline (path signal 50  -2500 1500  -2500 -2900))
+      (outline (path signal 150  -2250 -2650  9750 -2650))
+      (outline (path signal 150  -2250 1250  9750 1250))
+      (outline (path signal 150  9750 1250  9750 -2650))
+      (outline (path signal 150  -2250 1250  -2250 -2650))
+      (pin Round[A]Pad_1800_um 1 0 0)
+      (pin Round[A]Pad_1800_um 2 7500 -1400)
+    )
     (image Mounting_Holes:MountingHole_3mm_Pad
       (outline (path signal 150  3000 0  2919.14 -691.848  2680.9 -1346.4  2298.13 -1928.36
             1791.48 -2406.37  1188.24 -2754.65  520.945 -2954.42  -174.434 -2994.92
@@ -215,18 +231,6 @@
             -723.193 3168.52  0 3250  723.193 3168.52  1410.12 2928.15  2026.34 2540.95
             2540.95 2026.34  2928.15 1410.12  3168.52 723.193  3250 0))
       (pin Round[A]Pad_6000_um 1 0 0)
-    )
-    (image Varistors:RV_Disc_D9_W3.3_P5
-      (outline (path signal 50  -2250 -2500  7250 -2500))
-      (outline (path signal 50  -2250 1300  7250 1300))
-      (outline (path signal 50  7250 1300  7250 -2500))
-      (outline (path signal 50  -2250 1300  -2250 -2500))
-      (outline (path signal 150  -2000 -2250  7000 -2250))
-      (outline (path signal 150  -2000 1050  7000 1050))
-      (outline (path signal 150  7000 1050  7000 -2250))
-      (outline (path signal 150  -2000 1050  -2000 -2250))
-      (pin Round[A]Pad_1600_um 1 0 0)
-      (pin Round[A]Pad_1600_um 2 5000 -1200)
     )
     (image "ntv650_ecu:DSUB-25_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm"
       (outline (path signal 50  10450 3250  -43700 3250))
@@ -734,6 +738,11 @@
       (shape (circle B.Cu 1600))
       (attach off)
     )
+    (padstack Round[A]Pad_1800_um
+      (shape (circle F.Cu 1800))
+      (shape (circle B.Cu 1800))
+      (attach off)
+    )
     (padstack Round[A]Pad_1900_um
       (shape (circle F.Cu 1900))
       (shape (circle B.Cu 1900))
@@ -850,11 +859,10 @@
       (pins RV1-1 J1-15 J1-2 R20-2 R17-2 R12-2 D7-2 A1-8)
     )
     (net GND
-      (pins J7-1 J6-1 J5-1 J4-1 J3-1 J2-1 RV1-2 J1-0 J1-0@1 J1-23 J1-22 J1-14 J1-1
-        IC2-3 R31-2 R26-1 R25-2 R21-2 R18-2 R13-1 D6-1 D5-1 C19-2 C17-2 C16-2 C15-2
-        C14-2 C13-2 C12-2 C11-2 C10-2 C9-2 C8-2 C7-2 C6-2 C5-2 C4-2 P1-1 P1-3 P1-6
-        P1-8 P1-11 P1-13 C2-1 C1-1 D8-2 C20-2 C18-2 ARD1-80 ARD1-87 U1-2 Q3-3 Q2-3
-        Q1-3 IC1-4 A1-1 A1-7)
+      (pins RV1-2 J1-23 J1-22 J1-14 J1-1 IC2-3 R31-2 R26-1 R25-2 R21-2 R18-2 R13-1
+        D6-1 D5-1 C19-2 C17-2 C16-2 C15-2 C14-2 C13-2 C12-2 C11-2 C10-2 C9-2 C8-2
+        C7-2 C6-2 C5-2 C4-2 P1-1 P1-3 P1-6 P1-8 P1-11 P1-13 C2-1 C1-1 D8-2 C20-2 C18-2
+        ARD1-80 ARD1-87 U1-2 Q3-3 Q2-3 Q1-3 IC1-4 A1-1 A1-7)
     )
     (net "STEP-2B-OUT"
       (pins J1-18 A1-6)
@@ -1006,19 +1014,43 @@
     (net "Net-(C21-Pad2)"
       (pins R6-2 P1-9 C21-2)
     )
+    (net "Net-(J1-Pad0)"
+      (pins J1-0 J1-0@1)
+    )
     (class kicad_default "" "ADC-Clamp1" "ADC-Clamp2" "ADC-Clamp3" "ADC-Clamp4"
       "ADC-Clamp5" "ADC-Clamp6" CLT_sens "IDLE-CPU-D6" "IGN1-CPU-D40" "IGN2-CPU-D38"
-      "INJ1-CPU-D8" "INJ2-CPU-D9" ITS_sens MAP "MAP-CPU-A3" "Net-(C13-Pad1)"
+      "INJ1-CPU-D8" "INJ2-CPU-D9" ITS_sens MAP "MAP-CPU-A3" "Net-(A1-Pad10)"
+      "Net-(A1-Pad11)" "Net-(A1-Pad12)" "Net-(ARD1-Pad0)" "Net-(ARD1-Pad1)"
+      "Net-(ARD1-Pad10)" "Net-(ARD1-Pad11)" "Net-(ARD1-Pad12)" "Net-(ARD1-Pad13)"
+      "Net-(ARD1-Pad14)" "Net-(ARD1-Pad15)" "Net-(ARD1-Pad2)" "Net-(ARD1-Pad20)"
+      "Net-(ARD1-Pad21)" "Net-(ARD1-Pad22)" "Net-(ARD1-Pad23)" "Net-(ARD1-Pad25)"
+      "Net-(ARD1-Pad26)" "Net-(ARD1-Pad27)" "Net-(ARD1-Pad28)" "Net-(ARD1-Pad29)"
+      "Net-(ARD1-Pad3)" "Net-(ARD1-Pad30)" "Net-(ARD1-Pad31)" "Net-(ARD1-Pad32)"
+      "Net-(ARD1-Pad33)" "Net-(ARD1-Pad34)" "Net-(ARD1-Pad35)" "Net-(ARD1-Pad36)"
+      "Net-(ARD1-Pad37)" "Net-(ARD1-Pad39)" "Net-(ARD1-Pad4)" "Net-(ARD1-Pad41)"
+      "Net-(ARD1-Pad42)" "Net-(ARD1-Pad43)" "Net-(ARD1-Pad44)" "Net-(ARD1-Pad45)"
+      "Net-(ARD1-Pad46)" "Net-(ARD1-Pad47)" "Net-(ARD1-Pad48)" "Net-(ARD1-Pad49)"
+      "Net-(ARD1-Pad5)" "Net-(ARD1-Pad50)" "Net-(ARD1-Pad51)" "Net-(ARD1-Pad52)"
+      "Net-(ARD1-Pad53)" "Net-(ARD1-Pad59)" "Net-(ARD1-Pad60)" "Net-(ARD1-Pad61)"
+      "Net-(ARD1-Pad63)" "Net-(ARD1-Pad64)" "Net-(ARD1-Pad65)" "Net-(ARD1-Pad66)"
+      "Net-(ARD1-Pad67)" "Net-(ARD1-Pad68)" "Net-(ARD1-Pad69)" "Net-(ARD1-Pad7)"
+      "Net-(ARD1-Pad70)" "Net-(ARD1-Pad71)" "Net-(ARD1-Pad72)" "Net-(ARD1-Pad73)"
+      "Net-(ARD1-Pad74)" "Net-(ARD1-Pad75)" "Net-(ARD1-Pad76)" "Net-(ARD1-Pad77)"
+      "Net-(ARD1-Pad78)" "Net-(ARD1-Pad79)" "Net-(ARD1-Pad82)" "Net-(ARD1-Pad83)"
+      "Net-(ARD1-Pad84)" "Net-(ARD1-Pad85)" "Net-(ARD1-Pad86)" "Net-(C13-Pad1)"
       "Net-(C21-Pad1)" "Net-(C21-Pad2)" "Net-(C3-Pad1)" "Net-(C3-Pad2)" "Net-(D1-Pad1)"
       "Net-(D1-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(D5-Pad2)" "Net-(D6-Pad2)"
-      "Net-(IC2-Pad2)" "Net-(IC2-Pad4)" "Net-(Q1-Pad1)" "Net-(Q2-Pad1)" "Net-(Q3-Pad1)"
-      O2_sens "STEP-CPU-D17" "STEPDIR-CPU-D16" "STEPEN-CPU-D24" "TACH2-CPU-D18"
-      TPS_sens VR1+ "VR1-" VR2+ "VR2-"
+      "Net-(IC2-Pad1)" "Net-(IC2-Pad2)" "Net-(IC2-Pad4)" "Net-(IC2-Pad8)"
+      "Net-(J1-Pad0)" "Net-(J2-Pad1)" "Net-(J3-Pad1)" "Net-(J4-Pad1)" "Net-(J5-Pad1)"
+      "Net-(J6-Pad1)" "Net-(J7-Pad1)" "Net-(P1-Pad12)" "Net-(P1-Pad2)" "Net-(P1-Pad7)"
+      "Net-(Q1-Pad1)" "Net-(Q2-Pad1)" "Net-(Q3-Pad1)" O2_sens "STEP-CPU-D17"
+      "STEPDIR-CPU-D16" "STEPEN-CPU-D24" "TACH2-CPU-D18" TPS_sens VR1+ "VR1-"
+      VR2+ "VR2-"
       (circuit
         (use_via Via[0-1]_1200:200_um)
       )
       (rule
-        (width 550)
+        (width 600)
         (clearance 200.1)
       )
     )

@@ -328,103 +328,48 @@ $EndComp
 Text GLabel 7300 1250 3    50   Output ~ 0
 12V-raw
 $Comp
-L power:GND #PWR0123
-U 1 1 5D72D065
-P 9600 950
-F 0 "#PWR0123" H 9600 700 50  0001 C CNN
-F 1 "GND" H 9605 777 50  0000 C CNN
-F 2 "" H 9600 950 50  0001 C CNN
-F 3 "" H 9600 950 50  0001 C CNN
-	1    9600 950 
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x01 J2
 U 1 1 5D753D1F
-P 4550 950
-F 0 "J2" V 4514 862 50  0000 R CNN
-F 1 "Conn_01x01" V 4423 862 50  0000 R CNN
-F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 4550 950 50  0001 C CNN
-F 3 "~" H 4550 950 50  0001 C CNN
-	1    4550 950 
+P 4300 900
+F 0 "J2" V 4264 812 50  0000 R CNN
+F 1 "Conn_01x01" V 4173 812 50  0000 R CNN
+F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 4300 900 50  0001 C CNN
+F 3 "~" H 4300 900 50  0001 C CNN
+	1    4300 900 
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J3
 U 1 1 5D7540D7
-P 5000 950
-F 0 "J3" V 4964 862 50  0000 R CNN
-F 1 "Conn_01x01" V 4873 862 50  0000 R CNN
-F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 5000 950 50  0001 C CNN
-F 3 "~" H 5000 950 50  0001 C CNN
-	1    5000 950 
+P 4750 900
+F 0 "J3" V 4714 812 50  0000 R CNN
+F 1 "Conn_01x01" V 4623 812 50  0000 R CNN
+F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 4750 900 50  0001 C CNN
+F 3 "~" H 4750 900 50  0001 C CNN
+	1    4750 900 
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J4
 U 1 1 5D75441C
-P 5300 950
-F 0 "J4" V 5264 862 50  0000 R CNN
-F 1 "Conn_01x01" V 5173 862 50  0000 R CNN
-F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 5300 950 50  0001 C CNN
-F 3 "~" H 5300 950 50  0001 C CNN
-	1    5300 950 
+P 5050 900
+F 0 "J4" V 5014 812 50  0000 R CNN
+F 1 "Conn_01x01" V 4923 812 50  0000 R CNN
+F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 5050 900 50  0001 C CNN
+F 3 "~" H 5050 900 50  0001 C CNN
+	1    5050 900 
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J5
 U 1 1 5D75460C
-P 5650 950
-F 0 "J5" V 5614 862 50  0000 R CNN
-F 1 "Conn_01x01" V 5523 862 50  0000 R CNN
-F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 5650 950 50  0001 C CNN
-F 3 "~" H 5650 950 50  0001 C CNN
-	1    5650 950 
+P 5400 900
+F 0 "J5" V 5364 812 50  0000 R CNN
+F 1 "Conn_01x01" V 5273 812 50  0000 R CNN
+F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 5400 900 50  0001 C CNN
+F 3 "~" H 5400 900 50  0001 C CNN
+	1    5400 900 
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0124
-U 1 1 5D7547CD
-P 4550 1150
-F 0 "#PWR0124" H 4550 900 50  0001 C CNN
-F 1 "GND" H 4555 977 50  0000 C CNN
-F 2 "" H 4550 1150 50  0001 C CNN
-F 3 "" H 4550 1150 50  0001 C CNN
-	1    4550 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0125
-U 1 1 5D754CF1
-P 5000 1150
-F 0 "#PWR0125" H 5000 900 50  0001 C CNN
-F 1 "GND" H 5005 977 50  0000 C CNN
-F 2 "" H 5000 1150 50  0001 C CNN
-F 3 "" H 5000 1150 50  0001 C CNN
-	1    5000 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0126
-U 1 1 5D7550D1
-P 5300 1150
-F 0 "#PWR0126" H 5300 900 50  0001 C CNN
-F 1 "GND" H 5305 977 50  0000 C CNN
-F 2 "" H 5300 1150 50  0001 C CNN
-F 3 "" H 5300 1150 50  0001 C CNN
-	1    5300 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0127
-U 1 1 5D7553EE
-P 5650 1150
-F 0 "#PWR0127" H 5650 900 50  0001 C CNN
-F 1 "GND" H 5655 977 50  0000 C CNN
-F 2 "" H 5650 1150 50  0001 C CNN
-F 3 "" H 5650 1150 50  0001 C CNN
-	1    5650 1150
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0128
@@ -451,46 +396,24 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J6
 U 1 1 5D9B8B08
-P 6000 950
-F 0 "J6" V 5964 862 50  0000 R CNN
-F 1 "Conn_01x01" V 5873 862 50  0000 R CNN
-F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 6000 950 50  0001 C CNN
-F 3 "~" H 6000 950 50  0001 C CNN
-	1    6000 950 
+P 5750 900
+F 0 "J6" V 5714 812 50  0000 R CNN
+F 1 "Conn_01x01" V 5623 812 50  0000 R CNN
+F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 5750 900 50  0001 C CNN
+F 3 "~" H 5750 900 50  0001 C CNN
+	1    5750 900 
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5D9B8B0E
-P 6000 1150
-F 0 "#PWR02" H 6000 900 50  0001 C CNN
-F 1 "GND" H 6005 977 50  0000 C CNN
-F 2 "" H 6000 1150 50  0001 C CNN
-F 3 "" H 6000 1150 50  0001 C CNN
-	1    6000 1150
-	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J7
 U 1 1 5D9B919E
-P 6300 950
-F 0 "J7" V 6264 862 50  0000 R CNN
-F 1 "Conn_01x01" V 6173 862 50  0000 R CNN
-F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 6300 950 50  0001 C CNN
-F 3 "~" H 6300 950 50  0001 C CNN
-	1    6300 950 
+P 6050 900
+F 0 "J7" V 6014 812 50  0000 R CNN
+F 1 "Conn_01x01" V 5923 812 50  0000 R CNN
+F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 6050 900 50  0001 C CNN
+F 3 "~" H 6050 900 50  0001 C CNN
+	1    6050 900 
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR03
-U 1 1 5D9B91A4
-P 6300 1150
-F 0 "#PWR03" H 6300 900 50  0001 C CNN
-F 1 "GND" H 6305 977 50  0000 C CNN
-F 2 "" H 6300 1150 50  0001 C CNN
-F 3 "" H 6300 1150 50  0001 C CNN
-	1    6300 1150
-	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:DB25_Female_MountingHoles J1
