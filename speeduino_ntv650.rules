@@ -1,0 +1,207 @@
+
+(rules PCB speeduino_ntv650
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 7938)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.6)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 600.0)
+    (clear 200.2)
+    (clear 300.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_1200:200_um"
+    (shape
+      (circle F.Cu 1200.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1200.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_1200:200_um" "Via[0-1]_1200:200_um" default
+  )
+  (via 
+    "Via[0-1]_1200:200_um-kicad_default" "Via[0-1]_1200:200_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1200:200_um-5v_small" "Via[0-1]_1200:200_um" "5v_small"
+  )
+  (via 
+    "Via[0-1]_1200:200_um-GND_MOSFIT" "Via[0-1]_1200:200_um" "GND_MOSFIT"
+  )
+  (via 
+    "Via[0-1]_1200:200_um-POWER_ENG" "Via[0-1]_1200:200_um" "POWER_ENG"
+  )
+  (via 
+    "Via[0-1]_1200:200_um-Power" "Via[0-1]_1200:200_um" Power
+  )
+  (via 
+    "Via[0-1]_1200:200_um-power_exit" "Via[0-1]_1200:200_um" "power_exit"
+  )
+  (via 
+    "Via[0-1]_1200:200_um-power_logic" "Via[0-1]_1200:200_um" "power_logic"
+  )
+  (via 
+    "Via[0-1]_1200:200_um-step_engine_exit" "Via[0-1]_1200:200_um" "step_engine_exit"
+  )
+  (via_rule
+    default "Via[0-1]_1200:200_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_1200:200_um-kicad_default"
+  )
+  (via_rule
+    "5v_small" "Via[0-1]_1200:200_um-5v_small"
+  )
+  (via_rule
+    "GND_MOSFIT" "Via[0-1]_1200:200_um-GND_MOSFIT"
+  )
+  (via_rule
+    "POWER_ENG" "Via[0-1]_1200:200_um-POWER_ENG"
+  )
+  (via_rule
+    Power "Via[0-1]_1200:200_um-Power"
+  )
+  (via_rule
+    "power_exit" "Via[0-1]_1200:200_um-power_exit"
+  )
+  (via_rule
+    "power_logic" "Via[0-1]_1200:200_um-power_logic"
+  )
+  (via_rule
+    "step_engine_exit" "Via[0-1]_1200:200_um-step_engine_exit"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 600.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "STEPDIR-CPU-D16" "STEP-CPU-D17" "STEPEN-CPU-D24" "IGN1-CPU-D40" "IGN2-CPU-D38" "ADC-Clamp1" "ADC-Clamp4" "ADC-Clamp3"
+    "ADC-Clamp6" "ADC-Clamp2" "MAP-CPU-A3" "ADC-Clamp5" "INJ2-CPU-D9" "TACH2-CPU-D18" "INJ1-CPU-D8" "IDLE-CPU-D6"
+    "Net-(C3-Pad2)" "Net-(C3-Pad1)" "O2_sens" "TPS_sens" "ITS_sens" "Net-(C13-Pad1)" "CLT_sens" "Net-(D1-Pad2)"
+    "Net-(D1-Pad1)" "Net-(D3-Pad2)" "Net-(D3-Pad1)" "Net-(D5-Pad2)" "Net-(D6-Pad2)" "Net-(IC2-Pad2)" "Net-(IC2-Pad4)" MAP
+    "VR2-" VR2+ "VR1-" VR1+ "Net-(Q1-Pad1)" "Net-(Q2-Pad1)" "Net-(Q3-Pad1)" "Net-(C21-Pad1)"
+    "Net-(C21-Pad2)" "Net-(A1-Pad10)" "Net-(A1-Pad11)" "Net-(A1-Pad12)" "Net-(ARD1-Pad78)" "Net-(ARD1-Pad77)" "Net-(ARD1-Pad0)" "Net-(ARD1-Pad79)"
+    "Net-(ARD1-Pad76)" "Net-(ARD1-Pad1)" "Net-(ARD1-Pad2)" "Net-(ARD1-Pad4)" "Net-(ARD1-Pad10)" "Net-(ARD1-Pad12)" "Net-(ARD1-Pad14)" "Net-(ARD1-Pad20)"
+    "Net-(ARD1-Pad22)" "Net-(ARD1-Pad26)" "Net-(ARD1-Pad28)" "Net-(ARD1-Pad30)" "Net-(ARD1-Pad3)" "Net-(ARD1-Pad5)" "Net-(ARD1-Pad7)" "Net-(ARD1-Pad11)"
+    "Net-(ARD1-Pad13)" "Net-(ARD1-Pad15)" "Net-(ARD1-Pad21)" "Net-(ARD1-Pad23)" "Net-(ARD1-Pad25)" "Net-(ARD1-Pad27)" "Net-(ARD1-Pad29)" "Net-(ARD1-Pad31)"
+    "Net-(ARD1-Pad73)" "Net-(ARD1-Pad74)" "Net-(ARD1-Pad75)" "Net-(ARD1-Pad72)" "Net-(ARD1-Pad71)" "Net-(ARD1-Pad70)" "Net-(ARD1-Pad53)" "Net-(ARD1-Pad51)"
+    "Net-(ARD1-Pad49)" "Net-(ARD1-Pad45)" "Net-(ARD1-Pad44)" "Net-(ARD1-Pad52)" "Net-(ARD1-Pad50)" "Net-(ARD1-Pad48)" "Net-(ARD1-Pad47)" "Net-(ARD1-Pad46)"
+    "Net-(ARD1-Pad43)" "Net-(ARD1-Pad41)" "Net-(ARD1-Pad39)" "Net-(ARD1-Pad37)" "Net-(ARD1-Pad35)" "Net-(ARD1-Pad33)" "Net-(ARD1-Pad69)" "Net-(ARD1-Pad67)"
+    "Net-(ARD1-Pad65)" "Net-(ARD1-Pad63)" "Net-(ARD1-Pad61)" "Net-(ARD1-Pad59)" "Net-(ARD1-Pad60)" "Net-(ARD1-Pad64)" "Net-(ARD1-Pad66)" "Net-(ARD1-Pad68)"
+    "Net-(ARD1-Pad32)" "Net-(ARD1-Pad34)" "Net-(ARD1-Pad36)" "Net-(ARD1-Pad42)" "Net-(ARD1-Pad86)" "Net-(ARD1-Pad85)" "Net-(ARD1-Pad84)" "Net-(ARD1-Pad83)"
+    "Net-(ARD1-Pad82)" "Net-(IC2-Pad1)" "Net-(IC2-Pad8)" "Net-(J2-Pad1)" "Net-(J3-Pad1)" "Net-(J4-Pad1)" "Net-(J5-Pad1)" "Net-(J6-Pad1)"
+    "Net-(J7-Pad1)" "Net-(P1-Pad2)" "Net-(P1-Pad7)" "Net-(P1-Pad12)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 600.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "5v_small"
+    (clearance_class "5v_small")
+    (via_rule 5v_small)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "GND_MOSFIT"
+    "inj-1-out" "inj-2-out" "Net-(IC2-Pad5)" "Net-(IC2-Pad7)" "ign-2-out" "ign-1-out"
+    (clearance_class "GND_MOSFIT")
+    (via_rule GND_MOSFIT)
+    (rule
+      (width 1000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "POWER_ENG"
+    (clearance_class "POWER_ENG")
+    (via_rule POWER_ENG)
+    (rule
+      (width 1000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    5V 12V GND +12V
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 800.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "power_exit"
+    "idle-out"
+    (clearance_class "power_exit")
+    (via_rule power_exit)
+    (rule
+      (width 1000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "power_logic"
+    (clearance_class "power_logic")
+    (via_rule power_logic)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "step_engine_exit"
+    "STEP-2B-OUT" "STEP-2A-OUT" "STEP-1A-OUT" "STEP-1B-OUT"
+    (clearance_class "step_engine_exit")
+    (via_rule step_engine_exit)
+    (rule
+      (width 600.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

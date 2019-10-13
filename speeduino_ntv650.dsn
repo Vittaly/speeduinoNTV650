@@ -1,4 +1,4 @@
-(pcb C:\TEMP\speeduino\ntv650\speeduino_ntv650.dsn
+(pcb C:\temp\speeduinoNTV650\speeduino_ntv650.dsn
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
@@ -24,10 +24,20 @@
       (path pcb 0  186070 -160040  112070 -160040  112070 -41040  186070 -41040
             186070 -160040)
     )
-    (plane GND (polygon F.Cu 0  112070 -160030  112070 -41030  186070 -41040  186060 -160030
-            112070 -160030))
-    (plane GND (polygon B.Cu 0  112090 -160010  112070 -41040  186080 -41040  186060 -160020
-            112090 -160010))
+    (keepout "" (polygon signal 0  180896 -152045  180549 -152086  180210 -152166  179882 -152285
+            179570 -152442  179279 -152634  179011 -152858  178772 -153112
+            178564 -153391  178389 -153694  178251 -154014  178151 -154348
+            178090 -154692  178070 -155040  178090 -155388  178151 -155732
+            178251 -156066  178389 -156386  178564 -156689  178772 -156968
+            179011 -157222  179279 -157446  179570 -157638  179882 -157795
+            180210 -157914  180549 -157994  180896 -158035  181244 -158035
+            181591 -157994  181930 -157914  182258 -157795  182570 -157638
+            182861 -157446  183129 -157222  183368 -156968  183576 -156689
+            183751 -156386  183889 -156066  183989 -155732  184050 -155388
+            184070 -155040  184050 -154692  183989 -154348  183889 -154014
+            183751 -153694  183576 -153391  183368 -153112  183129 -152858
+            182861 -152634  182570 -152442  182258 -152285  181930 -152166
+            181591 -152086  181244 -152045  180896 -152045))
     (keepout "" (polygon signal 0  116896 -152045  116549 -152086  116210 -152166  115882 -152285
             115570 -152442  115279 -152634  115011 -152858  114772 -153112
             114564 -153391  114389 -153694  114251 -154014  114151 -154348
@@ -137,7 +147,7 @@
       (place R5 160744 -57250 back 90 (PN 10k))
       (place R4 168848 -57250 back 90 (PN 10k))
       (place R3 172900 -57250 back 90 (PN 10k))
-      (place R2 181380 -74110 front 270 (PN 1k))
+      (place R2 179740 -74470 front 270 (PN 1k))
       (place R1 166450 -86700 back 270 (PN 1k))
     )
     (component Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical
@@ -267,8 +277,8 @@
       (outline (path signal 100  9930 -7780  9930 2700))
       (outline (path signal 100  -43170 -7780  9930 -7780))
       (outline (path signal 100  -43170 2700  -43170 -7780))
-      (pin Round[A]Pad_4000_um 0 6930 -300)
-      (pin Round[A]Pad_4000_um 0@1 -40170 -300)
+      (pin Round[B]Pad_4000_um 0 6930 -300)
+      (pin Round[B]Pad_4000_um 0@1 -40170 -300)
       (pin Round[A]Pad_1600_um 25 -31855 -2840)
       (pin Round[A]Pad_1600_um 24 -29085 -2840)
       (pin Round[A]Pad_1600_um 23 -26315 -2840)
@@ -728,6 +738,10 @@
       (pin Round[A]Pad_1900_um 15 1270 -3810)
       (pin Round[A]Pad_1900_um 16 1270 -1270)
     )
+    (padstack Round[B]Pad_4000_um
+      (shape (circle B.Cu 4000))
+      (attach off)
+    )
     (padstack Round[A]Pad_1524_um
       (shape (circle F.Cu 1524))
       (shape (circle B.Cu 1524))
@@ -746,11 +760,6 @@
     (padstack Round[A]Pad_1900_um
       (shape (circle F.Cu 1900))
       (shape (circle B.Cu 1900))
-      (attach off)
-    )
-    (padstack Round[A]Pad_4000_um
-      (shape (circle F.Cu 4000))
-      (shape (circle B.Cu 4000))
       (attach off)
     )
     (padstack Round[A]Pad_6000_um
@@ -859,10 +868,10 @@
       (pins RV1-1 J1-15 J1-2 R20-2 R17-2 R12-2 D7-2 A1-8)
     )
     (net GND
-      (pins RV1-2 J1-23 J1-22 J1-14 J1-1 IC2-3 R31-2 R26-1 R25-2 R21-2 R18-2 R13-1
-        D6-1 D5-1 C19-2 C17-2 C16-2 C15-2 C14-2 C13-2 C12-2 C11-2 C10-2 C9-2 C8-2
-        C7-2 C6-2 C5-2 C4-2 P1-1 P1-3 P1-6 P1-8 P1-11 P1-13 C2-1 C1-1 D8-2 C20-2 C18-2
-        ARD1-80 ARD1-87 U1-2 Q3-3 Q2-3 Q1-3 IC1-4 A1-1 A1-7)
+      (pins RV1-2 J1-0 J1-0@1 J1-23 J1-22 J1-14 J1-1 IC2-3 R31-2 R26-1 R25-2 R21-2
+        R18-2 R13-1 D6-1 D5-1 C19-2 C17-2 C16-2 C15-2 C14-2 C13-2 C12-2 C11-2 C10-2
+        C9-2 C8-2 C7-2 C6-2 C5-2 C4-2 P1-1 P1-3 P1-6 P1-8 P1-11 P1-13 C2-1 C1-1 D8-2
+        C20-2 C18-2 ARD1-80 ARD1-87 U1-2 Q3-3 Q2-3 Q1-3 IC1-4 A1-1 A1-7)
     )
     (net "STEP-2B-OUT"
       (pins J1-18 A1-6)
@@ -1014,8 +1023,254 @@
     (net "Net-(C21-Pad2)"
       (pins R6-2 P1-9 C21-2)
     )
-    (net "Net-(J1-Pad0)"
-      (pins J1-0 J1-0@1)
+    (net "Net-(A1-Pad10)"
+      (pins A1-10)
+    )
+    (net "Net-(A1-Pad11)"
+      (pins A1-11)
+    )
+    (net "Net-(A1-Pad12)"
+      (pins A1-12)
+    )
+    (net "Net-(ARD1-Pad78)"
+      (pins ARD1-78)
+    )
+    (net "Net-(ARD1-Pad77)"
+      (pins ARD1-77)
+    )
+    (net "Net-(ARD1-Pad0)"
+      (pins ARD1-0)
+    )
+    (net "Net-(ARD1-Pad79)"
+      (pins ARD1-79)
+    )
+    (net "Net-(ARD1-Pad76)"
+      (pins ARD1-76)
+    )
+    (net "Net-(ARD1-Pad1)"
+      (pins ARD1-1)
+    )
+    (net "Net-(ARD1-Pad2)"
+      (pins ARD1-2)
+    )
+    (net "Net-(ARD1-Pad4)"
+      (pins ARD1-4)
+    )
+    (net "Net-(ARD1-Pad10)"
+      (pins ARD1-10)
+    )
+    (net "Net-(ARD1-Pad12)"
+      (pins ARD1-12)
+    )
+    (net "Net-(ARD1-Pad14)"
+      (pins ARD1-14)
+    )
+    (net "Net-(ARD1-Pad20)"
+      (pins ARD1-20)
+    )
+    (net "Net-(ARD1-Pad22)"
+      (pins ARD1-22)
+    )
+    (net "Net-(ARD1-Pad26)"
+      (pins ARD1-26)
+    )
+    (net "Net-(ARD1-Pad28)"
+      (pins ARD1-28)
+    )
+    (net "Net-(ARD1-Pad30)"
+      (pins ARD1-30)
+    )
+    (net "Net-(ARD1-Pad3)"
+      (pins ARD1-3)
+    )
+    (net "Net-(ARD1-Pad5)"
+      (pins ARD1-5)
+    )
+    (net "Net-(ARD1-Pad7)"
+      (pins ARD1-7)
+    )
+    (net "Net-(ARD1-Pad11)"
+      (pins ARD1-11)
+    )
+    (net "Net-(ARD1-Pad13)"
+      (pins ARD1-13)
+    )
+    (net "Net-(ARD1-Pad15)"
+      (pins ARD1-15)
+    )
+    (net "Net-(ARD1-Pad21)"
+      (pins ARD1-21)
+    )
+    (net "Net-(ARD1-Pad23)"
+      (pins ARD1-23)
+    )
+    (net "Net-(ARD1-Pad25)"
+      (pins ARD1-25)
+    )
+    (net "Net-(ARD1-Pad27)"
+      (pins ARD1-27)
+    )
+    (net "Net-(ARD1-Pad29)"
+      (pins ARD1-29)
+    )
+    (net "Net-(ARD1-Pad31)"
+      (pins ARD1-31)
+    )
+    (net "Net-(ARD1-Pad73)"
+      (pins ARD1-73)
+    )
+    (net "Net-(ARD1-Pad74)"
+      (pins ARD1-74)
+    )
+    (net "Net-(ARD1-Pad75)"
+      (pins ARD1-75)
+    )
+    (net "Net-(ARD1-Pad72)"
+      (pins ARD1-72)
+    )
+    (net "Net-(ARD1-Pad71)"
+      (pins ARD1-71)
+    )
+    (net "Net-(ARD1-Pad70)"
+      (pins ARD1-70)
+    )
+    (net "Net-(ARD1-Pad53)"
+      (pins ARD1-53)
+    )
+    (net "Net-(ARD1-Pad51)"
+      (pins ARD1-51)
+    )
+    (net "Net-(ARD1-Pad49)"
+      (pins ARD1-49)
+    )
+    (net "Net-(ARD1-Pad45)"
+      (pins ARD1-45)
+    )
+    (net "Net-(ARD1-Pad44)"
+      (pins ARD1-44)
+    )
+    (net "Net-(ARD1-Pad52)"
+      (pins ARD1-52)
+    )
+    (net "Net-(ARD1-Pad50)"
+      (pins ARD1-50)
+    )
+    (net "Net-(ARD1-Pad48)"
+      (pins ARD1-48)
+    )
+    (net "Net-(ARD1-Pad47)"
+      (pins ARD1-47)
+    )
+    (net "Net-(ARD1-Pad46)"
+      (pins ARD1-46)
+    )
+    (net "Net-(ARD1-Pad43)"
+      (pins ARD1-43)
+    )
+    (net "Net-(ARD1-Pad41)"
+      (pins ARD1-41)
+    )
+    (net "Net-(ARD1-Pad39)"
+      (pins ARD1-39)
+    )
+    (net "Net-(ARD1-Pad37)"
+      (pins ARD1-37)
+    )
+    (net "Net-(ARD1-Pad35)"
+      (pins ARD1-35)
+    )
+    (net "Net-(ARD1-Pad33)"
+      (pins ARD1-33)
+    )
+    (net "Net-(ARD1-Pad69)"
+      (pins ARD1-69)
+    )
+    (net "Net-(ARD1-Pad67)"
+      (pins ARD1-67)
+    )
+    (net "Net-(ARD1-Pad65)"
+      (pins ARD1-65)
+    )
+    (net "Net-(ARD1-Pad63)"
+      (pins ARD1-63)
+    )
+    (net "Net-(ARD1-Pad61)"
+      (pins ARD1-61)
+    )
+    (net "Net-(ARD1-Pad59)"
+      (pins ARD1-59)
+    )
+    (net "Net-(ARD1-Pad60)"
+      (pins ARD1-60)
+    )
+    (net "Net-(ARD1-Pad64)"
+      (pins ARD1-64)
+    )
+    (net "Net-(ARD1-Pad66)"
+      (pins ARD1-66)
+    )
+    (net "Net-(ARD1-Pad68)"
+      (pins ARD1-68)
+    )
+    (net "Net-(ARD1-Pad32)"
+      (pins ARD1-32)
+    )
+    (net "Net-(ARD1-Pad34)"
+      (pins ARD1-34)
+    )
+    (net "Net-(ARD1-Pad36)"
+      (pins ARD1-36)
+    )
+    (net "Net-(ARD1-Pad42)"
+      (pins ARD1-42)
+    )
+    (net "Net-(ARD1-Pad86)"
+      (pins ARD1-86)
+    )
+    (net "Net-(ARD1-Pad85)"
+      (pins ARD1-85)
+    )
+    (net "Net-(ARD1-Pad84)"
+      (pins ARD1-84)
+    )
+    (net "Net-(ARD1-Pad83)"
+      (pins ARD1-83)
+    )
+    (net "Net-(ARD1-Pad82)"
+      (pins ARD1-82)
+    )
+    (net "Net-(IC2-Pad1)"
+      (pins IC2-1)
+    )
+    (net "Net-(IC2-Pad8)"
+      (pins IC2-8)
+    )
+    (net "Net-(J2-Pad1)"
+      (pins J2-1)
+    )
+    (net "Net-(J3-Pad1)"
+      (pins J3-1)
+    )
+    (net "Net-(J4-Pad1)"
+      (pins J4-1)
+    )
+    (net "Net-(J5-Pad1)"
+      (pins J5-1)
+    )
+    (net "Net-(J6-Pad1)"
+      (pins J6-1)
+    )
+    (net "Net-(J7-Pad1)"
+      (pins J7-1)
+    )
+    (net "Net-(P1-Pad2)"
+      (pins P1-2)
+    )
+    (net "Net-(P1-Pad7)"
+      (pins P1-7)
+    )
+    (net "Net-(P1-Pad12)"
+      (pins P1-12)
     )
     (class kicad_default "" "ADC-Clamp1" "ADC-Clamp2" "ADC-Clamp3" "ADC-Clamp4"
       "ADC-Clamp5" "ADC-Clamp6" CLT_sens "IDLE-CPU-D6" "IGN1-CPU-D40" "IGN2-CPU-D38"
@@ -1041,11 +1296,10 @@
       "Net-(C21-Pad1)" "Net-(C21-Pad2)" "Net-(C3-Pad1)" "Net-(C3-Pad2)" "Net-(D1-Pad1)"
       "Net-(D1-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(D5-Pad2)" "Net-(D6-Pad2)"
       "Net-(IC2-Pad1)" "Net-(IC2-Pad2)" "Net-(IC2-Pad4)" "Net-(IC2-Pad8)"
-      "Net-(J1-Pad0)" "Net-(J2-Pad1)" "Net-(J3-Pad1)" "Net-(J4-Pad1)" "Net-(J5-Pad1)"
-      "Net-(J6-Pad1)" "Net-(J7-Pad1)" "Net-(P1-Pad12)" "Net-(P1-Pad2)" "Net-(P1-Pad7)"
-      "Net-(Q1-Pad1)" "Net-(Q2-Pad1)" "Net-(Q3-Pad1)" O2_sens "STEP-CPU-D17"
-      "STEPDIR-CPU-D16" "STEPEN-CPU-D24" "TACH2-CPU-D18" TPS_sens VR1+ "VR1-"
-      VR2+ "VR2-"
+      "Net-(J2-Pad1)" "Net-(J3-Pad1)" "Net-(J4-Pad1)" "Net-(J5-Pad1)" "Net-(J6-Pad1)"
+      "Net-(J7-Pad1)" "Net-(P1-Pad12)" "Net-(P1-Pad2)" "Net-(P1-Pad7)" "Net-(Q1-Pad1)"
+      "Net-(Q2-Pad1)" "Net-(Q3-Pad1)" O2_sens "STEP-CPU-D17" "STEPDIR-CPU-D16"
+      "STEPEN-CPU-D24" "TACH2-CPU-D18" TPS_sens VR1+ "VR1-" VR2+ "VR2-"
       (circuit
         (use_via Via[0-1]_1200:200_um)
       )
@@ -1078,7 +1332,7 @@
         (use_via Via[0-1]_1200:200_um)
       )
       (rule
-        (width 800)
+        (width 1000)
         (clearance 200.1)
       )
     )

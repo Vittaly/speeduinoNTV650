@@ -426,4 +426,15 @@ F 3 " ~" H 8200 950 50  0001 C CNN
 	1    8200 950 
 	0    -1   -1   0   
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DA22663
+P 9600 950
+F 0 "#PWR?" H 9600 700 50  0001 C CNN
+F 1 "GND" H 9605 777 50  0000 C CNN
+F 2 "" H 9600 950 50  0001 C CNN
+F 3 "" H 9600 950 50  0001 C CNN
+	1    9600 950 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
