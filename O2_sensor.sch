@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:speeduino_ntv650-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 15
+Sheet 4 14
 Title ""
 Date ""
 Rev ""
@@ -90,12 +89,5 @@ Wire Wire Line
 	3850 2850 3850 2300
 Connection ~ 3850 2300
 Wire Wire Line
-	3850 2300 5000 2300
-Text GLabel 5000 1850 0    50   Input ~ 0
-ADC-Clamp1
-Wire Wire Line
-	5000 1850 5000 2300
-Connection ~ 5000 2300
-Wire Wire Line
-	5000 2300 7000 2300
+	3850 2300 7000 2300
 $EndSCHEMATC

@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:speeduino_ntv650-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 15
+Sheet 1 14
 Title ""
 Date ""
 Rev ""
@@ -112,12 +111,6 @@ F1 "BatteryReferenceVoltage.sch" 50
 $EndSheet
 Text GLabel 4850 5800 0    50   Input ~ 0
 BRV-CPU-A4
-$Sheet
-S 2600 6550 900  600 
-U 5D644FA3
-F0 "ADC Clamping circuit" 50
-F1 "ADCClampingCircuit.sch" 50
-$EndSheet
 $Sheet
 S 1950 700  950  800 
 U 5D648515
