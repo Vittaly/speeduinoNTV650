@@ -1,5 +1,17 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP ADC101C021CIMM
+D I2C-Compatible, 10-Bit Analog-to-Digital Converter with Alert Function, MSOP-8
+K ADC I2C 10-bit Alert
+F http://www.ti.com/lit/ds/symlink/adc101c021.pdf
+$ENDCMP
+#
+$CMP ADC121C021CIMM
+D I2C-Compatible, 12-Bit Analog-to-Digital Converter with Alert Function, MSOP-8
+K ADC I2C 12-bit Alert
+F http://www.ti.com/lit/ds/symlink/adc121c021.pdf
+$ENDCMP
+#
 $CMP IRF3205
 D 110A Id, 55V Vds, Single N-Channel HEXFET Power MOSFET, 8mOhm Ron, TO-220AB
 K Single N-Channel HEXFET Power MOSFET
@@ -34,6 +46,12 @@ $CMP IRLZ44N
 D 47A Id, 55V Vds, Single N-Channel HEXFET Power MOSFET, 22mOhm Ron, TO-220AB
 K Single N-Channel HEXFET Power MOSFET
 F http://www.irf.com/product-info/datasheets/data/irlz44n.pdf
+$ENDCMP
+#
+$CMP NCV1124_2
+D I2C-Compatible, 8-Bit Analog-to-Digital Converter with Alert Function, MSOP-8
+K ADC I2C 8-bit Alert
+F http://www.ti.com/lit/ds/symlink/adc081c021.pdf
 $ENDCMP
 #
 $CMP STP62NS04Z
