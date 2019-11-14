@@ -24,6 +24,10 @@
       (path pcb 0  186070 -160040  112070 -160040  112070 -41040  186070 -41040
             186070 -160040)
     )
+    (plane GND (polygon F.Cu 0  112070 -160030  112080 -41040  186050 -41020  186050 -160010
+            112070 -160030))
+    (plane GND (polygon B.Cu 0  112080 -160010  112070 -41060  186080 -41030  186080 -160060
+            112080 -160010))
     (keepout "" (polygon signal 0  180896 -152045  180549 -152086  180210 -152166  179882 -152285
             179570 -152442  179279 -152634  179011 -152858  178772 -153112
             178564 -153391  178389 -153694  178251 -154014  178151 -154348
@@ -88,12 +92,12 @@
             131065 -106560))
     (keepout "" (polygon B.Cu 0  131065 -106560  131640 -106585  131665 -154885  130990 -154910
             131065 -106560))
-    (via "Via[0-1]_1200:200_um")
+    (via "Via[0-1]_1000:800_um" "Via[0-1]_800:600_um" "Via[0-1]_1200:1000_um")
     (rule
       (width 600)
-      (clearance 200.1)
-      (clearance 200.1 (type default_smd))
-      (clearance 50 (type smd_smd))
+      (clearance 300.1)
+      (clearance 300.1 (type default_smd))
+      (clearance 75 (type smd_smd))
     )
   )
   (placement
@@ -123,8 +127,8 @@
       (place R31 139250 -127663 front 0 (PN 100K))
       (place R28 116350 -126396 front 180 (PN 2.4K))
       (place R27 116350 -132870 front 180 (PN 2.4K))
-      (place R26 156610 -92710 back 270 (PN 100K))
-      (place R25 171484 -92710 back 270 (PN 100K))
+      (place R26 156610 -92710 front 270 (PN 100K))
+      (place R25 171484 -92710 front 90 (PN 100K))
       (place R24 171370 -141810 front 180 (PN 1K))
       (place R23 171170 -147190 front 180 (PN 1K))
       (place R22 139250 -118270 front 0 (PN 1K))
@@ -134,25 +138,27 @@
       (place R18 139250 -137057 front 0 (PN 100K))
       (place R17 122720 -107010 front 0 (PN 2.4K))
       (place R16 155900 -122680 front 0 (PN 470))
-      (place R15 156450 -86760 back 270 (PN 2.49K))
+      (place R15 156450 -86760 front 90 (PN 2.49K))
       (place R14 174040 -116200 front 270 (PN 470))
       (place R13 179280 -116270 front 270 (PN 1K))
       (place R12 178920 -108110 front 90 (PN 3.9K))
-      (place R11 181420 -86700 back 270 (PN 470))
-      (place R10 152640 -57250 back 90 (PN 2.49K))
+      (place R10 152640 -57250 front 90 (PN 2.49K))
       (place R9 174260 -108210 front 90 (PN 470))
-      (place R8 156550 -136620 front 0 (PN 470))
-      (place R7 156692 -57250 back 270 (PN 750))
-      (place R6 164796 -57250 back 90 (PN 10k))
-      (place R5 160744 -57250 back 90 (PN 10k))
-      (place R4 168848 -57250 back 90 (PN 10k))
-      (place R3 172900 -57250 back 90 (PN 10k))
+      (place R8 156175 -136620 front 0 (PN 470))
+      (place R7 156692 -57250 front 90 (PN 750))
+      (place R6 164796 -57250 front 270 (PN 10k))
+      (place R5 160744 -57250 front 270 (PN 10k))
+      (place R4 168848 -57250 front 270 (PN 10k))
+      (place R3 172900 -57250 front 270 (PN 10k))
       (place R2 179740 -74470 front 270 (PN 1k))
-      (place R1 166450 -86700 back 270 (PN 1k))
+      (place R1 166450 -86700 front 270 (PN 1k))
     )
     (component Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical
       (place R30 139380 -57230 front 270 (PN 160))
       (place R29 143950 -57340 front 270 (PN 160))
+    )
+    (component Resistors_SMD:R_0805_HandSoldering::1
+      (place R11 181420 -86700 front 270 (PN 470))
     )
     (component LEDs:LED_0805_HandSoldering
       (place D6 122770 -126380 front 180 (PN "LED AGN1"))
@@ -162,27 +168,29 @@
     )
     (component Capacitors_SMD:C_0805_HandSoldering
       (place C19 130770 -77060 front 270 (PN 0.1uF))
-      (place C17 161450 -86600 back 90 (PN 1uF))
-      (place C16 156220 -127430 front 180 (PN 0.22uF))
-      (place C15 161578 -92810 back 90 (PN 0.1uF))
+      (place C17 161450 -86600 front 90 (PN 1uF))
+      (place C16 156075 -127430 front 180 (PN 0.22uF))
+      (place C15 161578 -92810 front 90 (PN 0.1uF))
       (place C14 174230 -123730 front 270 (PN 0.22uF))
       (place C13 176890 -130460 front 0 (PN 0.1uF))
-      (place C12 176420 -86600 back 270 (PN 0.22uF))
-      (place C11 151130 -62000 back 0 (PN 0.1uF))
-      (place C10 156440 -132080 front 180 (PN 0.22uF))
-      (place C9 181390 -92810 back 90 (PN 0.1uF))
-      (place C8 156580 -141310 front 0 (PN 0.22uF))
+      (place C12 176420 -86600 front 270 (PN 0.22uF))
+      (place C11 151130 -62000 front 180 (PN 0.1uF))
+      (place C10 156075 -132080 front 180 (PN 0.22uF))
+      (place C8 156075 -141310 front 0 (PN 0.22uF))
       (place C7 179100 -123820 front 270 (PN 0.1uF))
-      (place C6 171450 -86600 back 270 (PN 0.01uF))
-      (place C5 156660 -146230 front 0 (PN 1uF))
-      (place C4 176452 -92810 back 90 (PN 0.3uF))
-      (place C21 163550 -62240 back 180 (PN 1nF))
-      (place C3 171450 -62240 back 0 (PN 1nF))
+      (place C6 171450 -86600 front 270 (PN 0.01uF))
+      (place C5 156075 -146230 front 0 (PN 1uF))
+      (place C21 163550 -62240 front -0 (PN 1nF))
+      (place C3 171450 -62240 front 180 (PN 1nF))
       (place C2 139150 -141723 front 0 (PN 0.22mF))
-      (place C1 166516 -92810 back 90 (PN 0.01mF))
+      (place C1 166516 -92810 front 270 (PN 0.01mF))
+    )
+    (component Capacitors_SMD:C_0805_HandSoldering::1
+      (place C9 181390 -92810 front 90 (PN 0.1uF))
+      (place C4 176452 -92810 front 90 (PN 0.3uF))
     )
     (component "Housings_SSOP:QSOP-16_3.9x4.9mm_Pitch0.635mm"
-      (place P1 173550 -74190 front 90 (PN MAX9926_9927))
+      (place P1 170180 -73660 front 0 (PN MAX9926_9927))
     )
     (component "Diodes_ThroughHole:D_DO-201_P5.08mm_Vertical_KathodeUp"
       (place D8 122390 -69590 front 180 (PN 1N5919BG))
@@ -277,8 +285,8 @@
       (outline (path signal 100  9930 -7780  9930 2700))
       (outline (path signal 100  -43170 -7780  9930 -7780))
       (outline (path signal 100  -43170 2700  -43170 -7780))
-      (pin Round[B]Pad_4000_um 0 6930 -300)
-      (pin Round[B]Pad_4000_um 0@1 -40170 -300)
+      (pin Round[A]Pad_4000_um 0 6930 -300)
+      (pin Round[A]Pad_4000_um 0@1 -40170 -300)
       (pin Round[A]Pad_1600_um 25 -31855 -2840)
       (pin Round[A]Pad_1600_um 24 -29085 -2840)
       (pin Round[A]Pad_1600_um 23 -26315 -2840)
@@ -384,6 +392,20 @@
       (pin Round[A]Pad_1600_um 1 0 0)
       (pin Oval[A]Pad_1600x1600_um 2 2540 0)
     )
+    (image Resistors_SMD:R_0805_HandSoldering::1
+      (outline (path signal 50  2350 -900  -2350 -900))
+      (outline (path signal 50  2350 -900  2350 900))
+      (outline (path signal 50  -2350 900  -2350 -900))
+      (outline (path signal 50  -2350 900  2350 900))
+      (outline (path signal 120  -600 880  600 880))
+      (outline (path signal 120  600 -880  -600 -880))
+      (outline (path signal 100  -1000 620  1000 620))
+      (outline (path signal 100  1000 620  1000 -620))
+      (outline (path signal 100  1000 -620  -1000 -620))
+      (outline (path signal 100  -1000 -620  -1000 620))
+      (pin Rect[T]Pad_1500x1300_um 2 1350 0)
+      (pin Rect[T]Pad_1500x1300_um 1 -1350 0)
+    )
     (image LEDs:LED_0805_HandSoldering
       (outline (path signal 100  -400 400  -400 -400))
       (outline (path signal 100  -400 0  200 400))
@@ -416,6 +438,20 @@
       (outline (path signal 50  2250 -870  -2250 -870))
       (pin Rect[T]Pad_1500x1250_um 1 -1250 0)
       (pin Rect[T]Pad_1500x1250_um 2 1250 0)
+    )
+    (image Capacitors_SMD:C_0805_HandSoldering::1
+      (outline (path signal 50  2250 -870  -2250 -870))
+      (outline (path signal 50  2250 -870  2250 880))
+      (outline (path signal 50  -2250 880  -2250 -870))
+      (outline (path signal 50  -2250 880  2250 880))
+      (outline (path signal 120  -500 -850  500 -850))
+      (outline (path signal 120  500 850  -500 850))
+      (outline (path signal 100  -1000 620  1000 620))
+      (outline (path signal 100  1000 620  1000 -620))
+      (outline (path signal 100  1000 -620  -1000 -620))
+      (outline (path signal 100  -1000 -620  -1000 620))
+      (pin Rect[T]Pad_1500x1250_um 2 1250 0)
+      (pin Rect[T]Pad_1500x1250_um 1 -1250 0)
     )
     (image "Housings_SSOP:QSOP-16_3.9x4.9mm_Pitch0.635mm"
       (outline (path signal 150  -950 2450  1950 2450))
@@ -738,10 +774,6 @@
       (pin Round[A]Pad_1900_um 15 1270 -3810)
       (pin Round[A]Pad_1900_um 16 1270 -1270)
     )
-    (padstack Round[B]Pad_4000_um
-      (shape (circle B.Cu 4000))
-      (attach off)
-    )
     (padstack Round[A]Pad_1524_um
       (shape (circle F.Cu 1524))
       (shape (circle B.Cu 1524))
@@ -760,6 +792,11 @@
     (padstack Round[A]Pad_1900_um
       (shape (circle F.Cu 1900))
       (shape (circle B.Cu 1900))
+      (attach off)
+    )
+    (padstack Round[A]Pad_4000_um
+      (shape (circle F.Cu 4000))
+      (shape (circle B.Cu 4000))
       (attach off)
     )
     (padstack Round[A]Pad_6000_um
@@ -844,7 +881,17 @@
       (shape (rect B.Cu -950 -950 950 950))
       (attach off)
     )
-    (padstack "Via[0-1]_1200:200_um"
+    (padstack "Via[0-1]_1000:800_um"
+      (shape (circle F.Cu 1000))
+      (shape (circle B.Cu 1000))
+      (attach off)
+    )
+    (padstack "Via[0-1]_800:600_um"
+      (shape (circle F.Cu 800))
+      (shape (circle B.Cu 800))
+      (attach off)
+    )
+    (padstack "Via[0-1]_1200:1000_um"
       (shape (circle F.Cu 1200))
       (shape (circle B.Cu 1200))
       (attach off)
@@ -1301,75 +1348,75 @@
       "Net-(Q2-Pad1)" "Net-(Q3-Pad1)" O2_sens "STEP-CPU-D17" "STEPDIR-CPU-D16"
       "STEPEN-CPU-D24" "TACH2-CPU-D18" TPS_sens VR1+ "VR1-" VR2+ "VR2-"
       (circuit
-        (use_via Via[0-1]_1200:200_um)
+        (use_via Via[0-1]_1000:800_um)
       )
       (rule
         (width 600)
-        (clearance 200.1)
+        (clearance 300.1)
       )
     )
     (class 5v_small
       (circuit
-        (use_via Via[0-1]_1200:200_um)
+        (use_via Via[0-1]_800:600_um)
       )
       (rule
         (width 500)
-        (clearance 200.1)
+        (clearance 300.1)
       )
     )
     (class GND_MOSFIT "Net-(IC2-Pad5)" "Net-(IC2-Pad7)" "ign-1-out" "ign-2-out"
       "inj-1-out" "inj-2-out"
       (circuit
-        (use_via Via[0-1]_1200:200_um)
+        (use_via Via[0-1]_1200:1000_um)
       )
       (rule
         (width 1000)
-        (clearance 200.1)
+        (clearance 300.1)
       )
     )
     (class POWER_ENG
       (circuit
-        (use_via Via[0-1]_1200:200_um)
+        (use_via Via[0-1]_1200:1000_um)
       )
       (rule
         (width 1000)
-        (clearance 200.1)
+        (clearance 300.1)
       )
     )
     (class Power +12V 12V 5V GND
       (circuit
-        (use_via Via[0-1]_1200:200_um)
+        (use_via Via[0-1]_1000:800_um)
       )
       (rule
         (width 800)
-        (clearance 200.1)
+        (clearance 300.1)
       )
     )
     (class power_exit "idle-out"
       (circuit
-        (use_via Via[0-1]_1200:200_um)
+        (use_via Via[0-1]_1200:1000_um)
       )
       (rule
         (width 1000)
-        (clearance 200.1)
+        (clearance 300.1)
       )
     )
     (class power_logic
       (circuit
-        (use_via Via[0-1]_1200:200_um)
+        (use_via Via[0-1]_800:600_um)
       )
       (rule
         (width 500)
-        (clearance 200.1)
+        (clearance 300.1)
       )
     )
     (class step_engine_exit "STEP-1A-OUT" "STEP-1B-OUT" "STEP-2A-OUT" "STEP-2B-OUT"
       (circuit
-        (use_via Via[0-1]_1200:200_um)
+        (use_via Via[0-1]_1000:800_um)
       )
       (rule
         (width 600)
-        (clearance 200.1)
+        (clearance 300.1)
       )
     )
   )
