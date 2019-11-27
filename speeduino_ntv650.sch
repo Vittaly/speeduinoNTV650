@@ -328,17 +328,6 @@ $EndComp
 Text GLabel 7300 1250 3    50   Output ~ 0
 12V-raw
 $Comp
-L Connector_Generic:Conn_01x01 J2
-U 1 1 5D753D1F
-P 4300 900
-F 0 "J2" V 4264 812 50  0000 R CNN
-F 1 "Conn_01x01" V 4173 812 50  0000 R CNN
-F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 4300 900 50  0001 C CNN
-F 3 "~" H 4300 900 50  0001 C CNN
-	1    4300 900 
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x01 J3
 U 1 1 5D7540D7
 P 4750 900
@@ -427,14 +416,25 @@ F 3 " ~" H 8200 950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR02
 U 1 1 5DA22663
 P 9600 950
-F 0 "#PWR?" H 9600 700 50  0001 C CNN
+F 0 "#PWR02" H 9600 700 50  0001 C CNN
 F 1 "GND" H 9605 777 50  0000 C CNN
 F 2 "" H 9600 950 50  0001 C CNN
 F 3 "" H 9600 950 50  0001 C CNN
 	1    9600 950 
 	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5D753D1F
+P 4300 900
+F 0 "J2" V 4264 812 50  0000 R CNN
+F 1 "Conn_01x01" V 4173 812 50  0000 R CNN
+F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 4300 900 50  0001 C CNN
+F 3 "~" H 4300 900 50  0001 C CNN
+	1    4300 900 
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
