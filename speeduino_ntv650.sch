@@ -66,10 +66,10 @@ Wire Wire Line
 Text GLabel 8800 1250 3    50   Input ~ 0
 5V
 $Comp
-L power:GND #PWR01
+L power:GND #PWR03
 U 1 1 5D627F7E
 P 7100 1250
-F 0 "#PWR01" H 7100 1000 50  0001 C CNN
+F 0 "#PWR03" H 7100 1000 50  0001 C CNN
 F 1 "GND" H 7105 1077 50  0000 C CNN
 F 2 "" H 7100 1250 50  0001 C CNN
 F 3 "" H 7100 1250 50  0001 C CNN
@@ -187,10 +187,10 @@ IGN1-CPU-D40
 Text GLabel 4850 4750 0    50   Output ~ 0
 IGN2-CPU-D38
 $Comp
-L power:GND #PWR0108
+L power:GND #PWR01
 U 1 1 5D6BB606
 P 4400 2350
-F 0 "#PWR0108" H 4400 2100 50  0001 C CNN
+F 0 "#PWR01" H 4400 2100 50  0001 C CNN
 F 1 "GND" H 4405 2177 50  0000 C CNN
 F 2 "" H 4400 2350 50  0001 C CNN
 F 3 "" H 4400 2350 50  0001 C CNN
@@ -315,10 +315,10 @@ ITS_sens
 Text GLabel 7200 1250 3    50   Output ~ 0
 12V-raw
 $Comp
-L power:GND #PWR0121
+L power:GND #PWR02
 U 1 1 5D67EA04
 P 7000 1250
-F 0 "#PWR0121" H 7000 1000 50  0001 C CNN
+F 0 "#PWR02" H 7000 1000 50  0001 C CNN
 F 1 "GND" H 7005 1077 50  0000 C CNN
 F 2 "" H 7000 1250 50  0001 C CNN
 F 3 "" H 7000 1250 50  0001 C CNN
@@ -328,10 +328,10 @@ $EndComp
 Text GLabel 7300 1250 3    50   Output ~ 0
 12V-raw
 $Comp
-L Connector_Generic:Conn_01x01 J3
+L Connector_Generic:Conn_01x01 J2
 U 1 1 5D7540D7
 P 4750 900
-F 0 "J3" V 4714 812 50  0000 R CNN
+F 0 "J2" V 4714 812 50  0000 R CNN
 F 1 "Conn_01x01" V 4623 812 50  0000 R CNN
 F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 4750 900 50  0001 C CNN
 F 3 "~" H 4750 900 50  0001 C CNN
@@ -339,10 +339,10 @@ F 3 "~" H 4750 900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J4
+L Connector_Generic:Conn_01x01 J3
 U 1 1 5D75441C
 P 5050 900
-F 0 "J4" V 5014 812 50  0000 R CNN
+F 0 "J3" V 5014 812 50  0000 R CNN
 F 1 "Conn_01x01" V 4923 812 50  0000 R CNN
 F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 5050 900 50  0001 C CNN
 F 3 "~" H 5050 900 50  0001 C CNN
@@ -350,10 +350,10 @@ F 3 "~" H 5050 900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J5
+L Connector_Generic:Conn_01x01 J4
 U 1 1 5D75460C
 P 5400 900
-F 0 "J5" V 5364 812 50  0000 R CNN
+F 0 "J4" V 5364 812 50  0000 R CNN
 F 1 "Conn_01x01" V 5273 812 50  0000 R CNN
 F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 5400 900 50  0001 C CNN
 F 3 "~" H 5400 900 50  0001 C CNN
@@ -361,10 +361,10 @@ F 3 "~" H 5400 900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0128
+L power:GND #PWR04
 U 1 1 5D75630E
 P 8700 1250
-F 0 "#PWR0128" H 8700 1000 50  0001 C CNN
+F 0 "#PWR04" H 8700 1000 50  0001 C CNN
 F 1 "GND" H 8705 1077 50  0000 C CNN
 F 2 "" H 8700 1250 50  0001 C CNN
 F 3 "" H 8700 1250 50  0001 C CNN
@@ -372,10 +372,10 @@ F 3 "" H 8700 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0129
+L power:GND #PWR05
 U 1 1 5D7568AF
 P 8900 1250
-F 0 "#PWR0129" H 8900 1000 50  0001 C CNN
+F 0 "#PWR05" H 8900 1000 50  0001 C CNN
 F 1 "GND" H 8905 1077 50  0000 C CNN
 F 2 "" H 8900 1250 50  0001 C CNN
 F 3 "" H 8900 1250 50  0001 C CNN
@@ -383,10 +383,10 @@ F 3 "" H 8900 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J6
+L Connector_Generic:Conn_01x01 J5
 U 1 1 5D9B8B08
 P 5750 900
-F 0 "J6" V 5714 812 50  0000 R CNN
+F 0 "J5" V 5714 812 50  0000 R CNN
 F 1 "Conn_01x01" V 5623 812 50  0000 R CNN
 F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 5750 900 50  0001 C CNN
 F 3 "~" H 5750 900 50  0001 C CNN
@@ -394,10 +394,10 @@ F 3 "~" H 5750 900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J7
+L Connector_Generic:Conn_01x01 J6
 U 1 1 5D9B919E
 P 6050 900
-F 0 "J7" V 6014 812 50  0000 R CNN
+F 0 "J6" V 6014 812 50  0000 R CNN
 F 1 "Conn_01x01" V 5923 812 50  0000 R CNN
 F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 6050 900 50  0001 C CNN
 F 3 "~" H 6050 900 50  0001 C CNN
@@ -405,10 +405,10 @@ F 3 "~" H 6050 900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:DB25_Female_MountingHoles J1
+L Connector:DB25_Female_MountingHoles J7
 U 1 1 5D9D0F26
 P 8200 950
-F 0 "J1" V 8517 906 50  0000 C CNN
+F 0 "J7" V 8517 906 50  0000 C CNN
 F 1 "DB25_Female_MountingHoles" V 8426 906 50  0000 C CNN
 F 2 "ntv650_ecu:DSUB-25_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 8200 950 50  0001 C CNN
 F 3 " ~" H 8200 950 50  0001 C CNN
@@ -416,10 +416,10 @@ F 3 " ~" H 8200 950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR02
+L power:GND #PWR06
 U 1 1 5DA22663
 P 9600 950
-F 0 "#PWR02" H 9600 700 50  0001 C CNN
+F 0 "#PWR06" H 9600 700 50  0001 C CNN
 F 1 "GND" H 9605 777 50  0000 C CNN
 F 2 "" H 9600 950 50  0001 C CNN
 F 3 "" H 9600 950 50  0001 C CNN
@@ -427,10 +427,10 @@ F 3 "" H 9600 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J2
+L Connector_Generic:Conn_01x01 J1
 U 1 1 5D753D1F
 P 4300 900
-F 0 "J2" V 4264 812 50  0000 R CNN
+F 0 "J1" V 4264 812 50  0000 R CNN
 F 1 "Conn_01x01" V 4173 812 50  0000 R CNN
 F 2 "Mounting_Holes:MountingHole_3mm_Pad" H 4300 900 50  0001 C CNN
 F 3 "~" H 4300 900 50  0001 C CNN
